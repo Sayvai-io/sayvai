@@ -27,7 +27,7 @@ const Hero = () => {
                     href="/#"
                     className="rounded-sm bg-[#45988e] px-8 py-4 text-base font-semibold text-white duration-300 ease-in-out hover:bg-[#45988e]/80"
                   >
-                    Get started
+                    Get start
                   </Link>
                   <Link
                     href="/#"
@@ -40,7 +40,7 @@ const Hero = () => {
             </div>
           </div>
         </div>
-        <div className="absolute right-0 top-0 z-[-1] opacity-30 lg:opacity-100">
+        {/* <div className="absolute right-0 top-0 z-[-1] opacity-30 lg:opacity-100">
           <svg
             width="450"
             height="556"
@@ -280,7 +280,7 @@ const Hero = () => {
               </radialGradient>
             </defs>
           </svg>
-        </div>
+        </div> */}
       </section>
     </>
   );

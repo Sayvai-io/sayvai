@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-const AboutSectionTwo = () => {
+const Culture = () => {
   return (
     <section className="py-16 md:py-20 lg:py-28">
       <div className="container">
@@ -28,10 +28,10 @@ const AboutSectionTwo = () => {
             <div className="wow fadeInUp max-w-[470px]" data-wow-delay=".2s">
               <div className="mb-9">
                 <h3 className="mb-4 text-xl font-bold text-black dark:text-white sm:text-2xl lg:text-xl xl:text-2xl">
-                MILESTONE
+                 COMPANY CULTURE
                 </h3>
                 <p className="text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed">
-                We're thrilled to announce a monumental achievement in our journey. Sayvai has reached a remarkable milestone, with users now relying on our innovative solutions worldwide. This achievement stands as a testament to our commitment to revolutionizing AI with cutting-edge technology. We extend our heartfelt gratitude to our users, partners, and dedicated team for their unwavering support.
+                At Sayvai, our culture is built on the foundation of collaboration, innovation, and empathy. We believe in fostering a supportive and inclusive environment where every team member is valued, respected, and empowered to reach their full potential. We embrace diversity in perspectives, experiences, and backgrounds, recognizing that it fuels creativity and drives meaningful change. Our culture encourages curiosity, continuous learning, and a growth mindset, as we navigate the ever-evolving landscape of technology and business. We celebrate success, learn from failure, and approach challenges with resilience, determination, and a sense of humor. Together, we're not just building AI solutions—we're building a community that thrives on passion, purpose, and human connection.
                 </p>
               </div>
               
@@ -44,4 +44,4 @@ const AboutSectionTwo = () => {
   );
 };
 
-export default AboutSectionTwo;
+export default Culture;
