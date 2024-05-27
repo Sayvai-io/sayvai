@@ -2,7 +2,7 @@ import AboutSectionOne from "@/components/About/AboutSectionOne";
 import AboutSectionTwo from "@/components/About/AboutSectionTwo";
 import Blog from "@/components/Blog";
 import Brands from "@/components/Brands";
-import CategoryCarousel from "@/components/Carousel/CategoryCarousel";
+
 import Testimoni from "@/components/Carousel/Testimoni";
 import ScrollUp from "@/components/Common/ScrollUp";
 import Company from "@/components/Company/Company";
