@@ -31,7 +31,7 @@ const AboutSectionTwo = () => {
                 MILESTONE
                 </h3>
                 <p className="text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed">
-                We're thrilled to announce a monumental achievement in our journey. Sayvai has reached a remarkable milestone, with users now relying on our innovative solutions worldwide. This achievement stands as a testament to our commitment to revolutionizing AI with cutting-edge technology. We extend our heartfelt gratitude to our users, partners, and dedicated team for their unwavering support.
+                We are thrilled to announce a monumental achievement in our journey. Sayvai has reached a remarkable milestone, with users now relying on our innovative solutions worldwide. This achievement stands as a testament to our commitment to revolutionizing AI with cutting-edge technology. We extend our heartfelt gratitude to our users, partners, and dedicated team for their unwavering support.
                 </p>
               </div>
               

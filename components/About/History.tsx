@@ -23,7 +23,7 @@ const History= () => {
                  Building on this success, Sayvai expanded its product offerings in September 2023 to address emerging needs in the market. Introducing AI voice assistance, Sayvai enhanced its ability to deliver value to its users and partners, laying the groundwork for sustainable growth and impact.
                 </p>
                 <p className="mt-8 text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed">
-                  Recognizing the power of collaboration, Sayvai forged strategic partnerships with industry leaders. These partnerships not only strengthened Sayvai's position in the market but also unlocked new opportunities for innovation and expansion, driving the company to new heights of success.
+                  Recognizing the power of collaboration, Sayvai forged strategic partnerships with industry leaders. These partnerships not only strengthened Sayvai position in the market but also unlocked new opportunities for innovation and expansion, driving the company to new heights of success.
                 </p>
                 <p className="mt-8 text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed">
                  With a deep-rooted belief in the power of community, Sayvai launched initiatives in January 2024 to foster collaboration and knowledge-sharing within the AI ecosystem. Empowering aspiring entrepreneurs and developers to leverage AI for positive change, Sayvai drove innovation and inclusivity, creating a vibrant ecosystem of collaboration and growth. 
