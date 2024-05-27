@@ -9,6 +9,7 @@ const Features = () => {
         <div className="container">
           <SectionTitle
             title="Platform Features"
+            subtitle="Unlock the full potential of your business"
             paragraph="Discover built-in platform features for business growth and success with cutting-edge transformative capabilities."
             center
           />
