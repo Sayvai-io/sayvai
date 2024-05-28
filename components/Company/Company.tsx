@@ -41,7 +41,7 @@ const Company = () => {
      
      <div className="flex flex-col justify-center overflow-hidden">
       <div className="text-xl text-center text-gray-700 dark:text-white">
-        Trusted by <span className="text-indigo-600">2000+</span> customers worldwide
+        Trusted by lot of companies
       </div>
 
       <div className="mt-10">
