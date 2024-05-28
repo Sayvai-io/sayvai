@@ -165,7 +165,7 @@ const Footer = () => {
                       href="/contact"
                       className="dark:text-body-color-dark mb-4 inline-block text-base text-body-color duration-300 hover:text-[#45988e] dark:hover:text-[#45988e]"
                     >
-                      Open Support Ticket
+                      Contact Form
                     </a>
                   </li>
                   <li>
@@ -173,7 +173,7 @@ const Footer = () => {
                       href="/"
                       className="dark:text-body-color-dark mb-4 inline-block text-base text-body-color duration-300 hover:text-[#45988e] dark:hover:text-[#45988e]"
                     >
-                      Terms of Use
+                      Office Location
                     </a>
                   </li>
                   <li>
@@ -181,7 +181,7 @@ const Footer = () => {
                       href="/about"
                       className="dark:text-body-color-dark mb-4 inline-block text-base text-body-color duration-300 hover:text-[#45988e] dark:hover:text-[#45988e]"
                     >
-                      About
+                      Careers
                     </a>
                   </li>
                 </ul>

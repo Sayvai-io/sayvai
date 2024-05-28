@@ -11,7 +11,7 @@ const NewsLatterBox = () => {
       data-wow-delay=".2s"
     >
       <h3 className="mb-4 text-2xl font-bold leading-tight text-black dark:text-white">
-        Subscribe to receive future updates
+        Tell us how we can help 
       </h3>
       <p className="mb-11 border-b border-body-color border-opacity-25 pb-11 text-base leading-relaxed text-body-color dark:border-white dark:border-opacity-25">
         Lorem ipsum dolor sited Sed ullam corper consectur adipiscing Mae ornare
@@ -32,7 +32,7 @@ const NewsLatterBox = () => {
         />
         <input
           type="submit"
-          value="Subscribe"
+          value="Schedule a demo"
           className="shadow-submit dark:shadow-submit-dark mb-5 flex w-full cursor-pointer items-center justify-center rounded-sm bg-[#45988e] px-9 py-4 text-base font-medium text-white duration-300 hover:bg-[#45988e]/90"
         />
         <p className="dark:text-body-color-dark text-center text-base leading-relaxed text-body-color">
