@@ -56,10 +56,20 @@ const Header = () => {
                   sticky ? "py-5 lg:py-2" : "py-8"
                 } `}
               >
-                <p className="w-full dark:hidden text-[#45988e] font-bold sm:text-4xl sm:leading-tight md:text-5xl md:leading-tight text-3xl">
-                  Sayvai</p>
-                <p className="hidden w-full dark:block text-[#45988e] font-bold sm:text-4xl sm:leading-tight md:text-5xl md:leading-tight text-3xl">
-                  Sayvai</p>
+                <Image
+                  src="/images/logo/logo-2.svg"
+                  alt="logo"
+                  width={140}
+                  height={30}
+                  className="w-full dark:hidden"
+                />
+                <Image
+                  src="/images/logo/logo.svg"
+                  alt="logo"
+                  width={140}
+                  height={30}
+                  className="hidden w-full dark:block"
+                />
               </Link>
             </div>
             <div className="flex w-full items-center justify-between px-4">
