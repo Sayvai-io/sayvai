@@ -54,7 +54,7 @@ const Video = () => {
       channel="youtube"
       // start={true}
       isOpen={isOpen}
-      videoId="L61p2uyiMSo"
+      videoId="o_iGNoldUzM"
       onClose={() => setOpen(false)}
       />
 

@@ -2,6 +2,7 @@
 
 import React from "react";
 import QA from "./QA";
+import SectionTitle from "../Common/SectionTitle";
 
 const dataQA = [
     {
@@ -37,6 +38,16 @@ const dataQA = [
 const Faq: React.FC = () => {
     return (
         <div className="px-4 sm:px-6 lg:px-8 py-8 sm:py-10 lg:py-12">
+            <div className="container">
+        <SectionTitle
+          title="Frequently Asked Questions"
+          subtitle=""
+          paragraph=""
+          center
+        />
+
+        
+      </div>
             {dataQA.map((data, i) => (
                 <div key={i}>
                     <QA question={data.question} answer={data.answer} />

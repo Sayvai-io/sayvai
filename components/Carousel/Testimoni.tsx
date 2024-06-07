@@ -3,6 +3,7 @@
 import React, { useState } from "react";
 import Slider from "react-slick";
 import Image from "next/image";
+import SectionTitle from "../Common/SectionTitle";
 
 const Testimoni = ({
   listTestimoni = [
@@ -150,6 +151,16 @@ const Testimoni = ({
 
   return (
     <div className="px-4 md:px-10 lg:px-20">
+      <div className="container">
+        <SectionTitle
+          title="INDUSTRIES WE SERVE"
+          subtitle=""
+          paragraph="There are many variations of passages of Lorem Ipsum available but the majority have suffered alteration in some form."
+          center
+        />
+
+        
+      </div>
       <Slider
         {...settings}
         arrows={false}

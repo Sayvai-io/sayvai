@@ -27,16 +27,16 @@ export default function Home() {
     <>
       <ScrollUp />
       <Hero />
-      <Company />
+      {/* <Company /> */}
       <Features />
       <Video />
-      <Brands />
+      {/* <Brands /> */}
       <AboutSectionOne />
       <AboutSectionTwo />
       <Testimoni />
-      <Testimonials />
+      {/* <Testimonials /> */}
       <Pricing />
-      <Blog />
+      {/* <Blog /> */}
       <Faq />
       
       {/* <CategoryCarousel /> */}

@@ -16,12 +16,37 @@ const SigninPage = () => {
           <div className="-mx-4 flex flex-wrap">
             <div className="w-full px-4">
               <div className="shadow-three mx-auto max-w-[500px] rounded bg-white px-6 py-10 dark:bg-dark sm:p-[60px]">
+              
                 <h3 className="mb-3 text-center text-2xl font-bold text-black dark:text-white sm:text-3xl">
                   Sign in to your account
                 </h3>
                 <p className="mb-11 text-center text-base font-medium text-body-color">
                   Login to your account for a faster checkout.
                 </p>
+                
+                <div className="border-b border-[#45988e] mb-6">
+                <div className="mb-6 grid grid-cols-2 text-center">
+
+                 
+                  <Link href="signin" className="text-sm font-medium text-[#45988e] hover:underline">
+                  <button className="shadow-submit dark:shadow-submit-dark flex w-full items-center justify-center rounded-sm bg-[#45988e] px-9 py-4 text-base font-medium text-white duration-300 hover:bg-[#45988e]/90">
+                      Signin
+                  </button>
+                  </Link>
+                  
+                 
+                  <Link href="/signup" className="text-sm font-medium text-[#45988e] hover:underline">
+                    
+                  <button className="shadow-submit dark:shadow-submit-dark flex w-full items-center justify-center rounded-sm bg-[#45988e] px-9 py-4 text-base font-medium text-white duration-300 hover:bg-[#45988e]/90">
+                      Signup
+                  </button>
+                    
+                  </Link>
+                  
+                </div>
+
+                </div>
+
                 <button className="border-stroke dark:text-body-color-dark dark:shadow-two mb-6 flex w-full items-center justify-center rounded-sm border bg-[#f8f8f8] px-6 py-3 text-base text-body-color outline-none transition-all duration-300 hover:border-primary hover:bg-primary/5 hover:text-[#45988e] dark:border-transparent dark:bg-[#2C303B] dark:hover:border-[#45988e] dark:hover:bg-primary/5 dark:hover:text-[#45988e] dark:hover:shadow-none">
                   <span className="mr-3">
                     <svg

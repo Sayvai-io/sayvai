@@ -24,10 +24,10 @@ const Hero = () => {
                 </p>
                 <div className="flex flex-col items-center justify-center space-y-4 sm:flex-row sm:space-x-4 sm:space-y-0">
                   <Link
-                    href="/#"
+                    href="/signin"
                     className="rounded-sm bg-[#45988e] px-8 py-4 text-base font-semibold text-white duration-300 ease-in-out hover:bg-[#45988e]/80"
                   >
-                    Get start
+                    Get started
                   </Link>
                   <Link
                     href="/#"
