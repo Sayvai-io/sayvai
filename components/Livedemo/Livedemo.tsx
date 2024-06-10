@@ -1,10 +1,13 @@
 "use client"; // Add this line at the top
 
 import { useState } from "react";
+import PhoneInput from 'react-phone-input-2';
+import 'react-phone-input-2/lib/style.css';
 
 const Livedemo = () => {
   // State to track which content to display
-  const [activeContent, setActiveContent] = useState("livedemo");
+  const [activeContent, setActiveContent] = useState<string>("livedemo");
+  const [phone, setPhone] = useState<string>("");
 
   const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
@@ -60,11 +63,11 @@ const Livedemo = () => {
                       >
                         Phone Number
                       </label>
-                      <input
-                        type="tel"
-                        name="phone"
-                        placeholder="Enter your phone number"
-                        className="border-stroke dark:text-body-color-dark dark:shadow-two w-full rounded-sm border bg-[#f8f8f8] px-6 py-3 text-base text-body-color outline-none transition-all duration-300 focus:border-[#45988e] dark:border-transparent dark:bg-[#2C303B] dark:focus:border-[#45988e] dark:focus:shadow-none"
+                      <PhoneInput
+                        country={'us'}
+                        value={phone}
+                        onChange={(phone: string) => setPhone(phone)}
+                        inputClass="border-stroke dark:text-body-color-dark dark:shadow-two w-full rounded-sm border bg-[#f8f8f8] px-6 py-3 text-base text-body-color outline-none transition-all duration-300 focus:border-[#45988e] dark:border-transparent dark:bg-[#2C303B] dark:focus:border-[#45988e] dark:focus:shadow-none"
                       />
                     </div>
                   </div>
