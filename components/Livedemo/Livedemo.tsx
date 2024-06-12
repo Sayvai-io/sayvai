@@ -1,16 +1,44 @@
 "use client"; // Add this line at the top
 
 import { useState } from "react";
+import PhoneInput from 'react-phone-input-2';
+import 'react-phone-input-2/lib/style.css';
 
 const Livedemo = () => {
-  // State to track which content to display
-  const [activeContent, setActiveContent] = useState("livedemo");
+  const [activeContent, setActiveContent] = useState<string>("livedemo");
+  const [phone, setPhone] = useState<string>("");
+  const [name, setName] = useState<string>("");
+  const [email, setEmail] = useState<string>("");
 
-  const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
-    // Validate the form here (optional)
-    // Redirect to the specified URL
-    window.open("https://voice.sayvai.io/", "_blank");
+
+    // Prepare the data to be sent
+    const data = {
+      to_number: phone,
+      name: name,
+      email: email
+    };
+
+    try {
+      // Send the data to the external endpoint
+      const response = await fetch('https://voice.sayvai.io/make_call', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(data),
+      });
+
+      if (response.ok) {
+        alert('Call initiated successfully!');
+      } else {
+        alert('Failed to initiate call.');
+      }
+    } catch (error) {
+      console.error('Error:', error);
+      alert('An error occurred while trying to initiate the call.');
+    }
   };
 
   return (
@@ -44,7 +72,6 @@ const Livedemo = () => {
                   </div>
                 </div>
 
-                {/* Conditionally render content based on activeContent state */}
                 {activeContent === "livedemo" ? (
                   <div>
                     <h4 className="mb-4 text-xl font-semibold text-center text-black dark:text-white">
@@ -60,11 +87,11 @@ const Livedemo = () => {
                       >
                         Phone Number
                       </label>
-                      <input
-                        type="tel"
-                        name="phone"
-                        placeholder="Enter your phone number"
-                        className="border-stroke dark:text-body-color-dark dark:shadow-two w-full rounded-sm border bg-[#f8f8f8] px-6 py-3 text-base text-body-color outline-none transition-all duration-300 focus:border-[#45988e] dark:border-transparent dark:bg-[#2C303B] dark:focus:border-[#45988e] dark:focus:shadow-none"
+                      <PhoneInput
+                        country={'us'}
+                        value={phone}
+                        onChange={(phone: string) => setPhone(phone)}
+                        inputClass="border-stroke dark:text-body-color-dark dark:shadow-two w-full rounded-sm border bg-[#f8f8f8] px-6 py-3 text-base text-body-color outline-none transition-all duration-300 focus:border-[#45988e] dark:border-transparent dark:bg-[#2C303B] dark:focus:border-[#45988e] dark:focus:shadow-none"
                       />
                     </div>
                   </div>
@@ -91,6 +118,8 @@ const Livedemo = () => {
                       type="text"
                       name="name"
                       placeholder="Enter your full name"
+                      value={name}
+                      onChange={(e) => setName(e.target.value)}
                       className="border-stroke dark:text-body-color-dark dark:shadow-two w-full rounded-sm border bg-[#f8f8f8] px-6 py-3 text-base text-body-color outline-none transition-all duration-300 focus:border-[#45988e] dark:border-transparent dark:bg-[#2C303B] dark:focus:border-[#45988e] dark:focus:shadow-none"
                     />
                   </div>
@@ -105,6 +134,8 @@ const Livedemo = () => {
                       type="email"
                       name="email"
                       placeholder="Enter your Email"
+                      value={email}
+                      onChange={(e) => setEmail(e.target.value)}
                       className="border-stroke dark:text-body-color-dark dark:shadow-two w-full rounded-sm border bg-[#f8f8f8] px-6 py-3 text-base text-body-color outline-none transition-all duration-300 focus:border-[#45988e] dark:border-transparent dark:bg-[#2C303B] dark:focus:border-[#45988e] dark:focus:shadow-none"
                     />
                   </div>

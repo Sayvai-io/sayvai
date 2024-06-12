@@ -6,6 +6,8 @@ import ScrollToTop from "@/components/ScrollToTop";
 import { Inter } from "next/font/google";
 import "react-modal-video/css/modal-video.css";
 import "../styles/index.css";
+import 'react-phone-input-2/lib/style.css'; // Import react-phone-input-2 styles here
+import '../styles/index.css'; // Import your global styles here
 
 const inter = Inter({ subsets: ["latin"] });
 
