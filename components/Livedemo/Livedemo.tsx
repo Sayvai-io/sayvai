@@ -19,26 +19,34 @@ const Livedemo = () => {
       name: name,
       email: email
     };
+    let endpoint = '';
+  if (activeContent === 'livedemo') {
+    endpoint = 'https://voice.sayvai.io/make_call';
+  } else if (activeContent === 'webcall') {
+    window.open ('https://voice.sayvai.io/','_blank');
+    return; // Stop execution as we're redirecting
+  }
 
-    try {
-      // Send the data to the external endpoint
-      const response = await fetch('https://voice.sayvai.io/make_call', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(data),
-      });
+  try {
+    // Send the data to the external endpoint
+    const response = await fetch(endpoint, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(data),
+    });
 
-      if (response.ok) {
-        alert('Call initiated successfully!');
-      } else {
-        alert('Failed to initiate call.');
-      }
-    } catch (error) {
-      console.error('Error:', error);
-      alert('An error occurred while trying to initiate the call.');
+    if (response.ok) {
+      alert('Call initiated successfully!');
+    } else {
+      alert('Failed to initiate call.');
     }
+  } catch (error) {
+    console.error('Error:', error);
+    alert('An error occurred while trying to initiate the call.');
+  }
+   
   };
 
   return (
@@ -87,12 +95,24 @@ const Livedemo = () => {
                       >
                         Phone Number
                       </label>
-                      <PhoneInput
-                        country={'us'}
-                        value={phone}
-                        onChange={(phone: string) => setPhone(phone)}
-                        inputClass="border-stroke dark:text-body-color-dark dark:shadow-two w-full rounded-sm border bg-[#f8f8f8] px-6 py-3 text-base text-body-color outline-none transition-all duration-300 focus:border-[#45988e] dark:border-transparent dark:bg-[#2C303B] dark:focus:border-[#45988e] dark:focus:shadow-none"
-                      />
+                       <PhoneInput
+        country={'in'}
+        value={phone}
+        onChange={(phone: string) => setPhone(phone)}
+        inputStyle={{
+          width: '100%',
+          border: '1px solid #d1d5db', // Example border color
+          backgroundColor: '#f8f8f8', // Example background color
+          padding: '24px 45px', // Example padding
+          borderRadius: '2px', // Example border radius
+          outline: 'none',
+          transition: 'all 0.3s ease',
+        }}
+        buttonStyle={{
+          borderRadius: '4px 0 0 4px', // Match the input border radius
+        }}
+        
+      />
                     </div>
                   </div>
                 ) : (
