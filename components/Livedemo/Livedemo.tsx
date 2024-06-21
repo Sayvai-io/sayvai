@@ -1,8 +1,18 @@
 "use client"; // Add this line at the top
 
 import { useState } from "react";
-import PhoneInput from 'react-phone-input-2';
+import PhoneInput, { PhoneInputProps } from 'react-phone-input-2';
 import 'react-phone-input-2/lib/style.css';
+import './customPhoneInput.css'; // Your custom styles
+
+// Step 1: Define the extended type and custom component
+interface ExtendedPhoneInputProps extends PhoneInputProps {
+  className?: string;
+}
+
+const CustomPhoneInput: React.FC<ExtendedPhoneInputProps> = (props) => {
+  return <PhoneInput {...props} />;
+};
 
 const Livedemo = () => {
   const [activeContent, setActiveContent] = useState<string>("livedemo");
@@ -95,24 +105,12 @@ const Livedemo = () => {
                       >
                         Phone Number
                       </label>
-                       <PhoneInput
-        country={'in'}
-        value={phone}
-        onChange={(phone: string) => setPhone(phone)}
-        inputStyle={{
-          width: '100%',
-          border: '1px solid #d1d5db', // Example border color
-          backgroundColor: '#f8f8f8', // Example background color
-          padding: '24px 45px', // Example padding
-          borderRadius: '2px', // Example border radius
-          outline: 'none',
-          transition: 'all 0.3s ease',
-        }}
-        buttonStyle={{
-          borderRadius: '4px 0 0 4px', // Match the input border radius
-        }}
-        
-      />
+                       <CustomPhoneInput
+                        country={'in'}
+                        value={phone}
+                        onChange={(phone: string) => setPhone(phone)}
+                        className=" dark:text-body-color-dark dark:shadow-two w-full rounded-sm border bg-[#f8f8f8] px-6 py-3 text-base text-body-color outline-none transition-all duration-300 focus:border-[#45988e] dark:border-transparent dark:bg-[#2C303B] dark:focus:border-[#45988e] dark:focus:shadow-none"
+                      />
                     </div>
                   </div>
                 ) : (

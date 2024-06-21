@@ -34,4 +34,28 @@
   input#checkboxLabel:checked ~ .box span {
     @apply opacity-100;
   }
+  
+   /* Add your custom phone input styles here */
+   .custom-phone-input .form-control {
+    @apply border border-gray-300 bg-gray-100 text-gray-700 w-full p-3 rounded-md outline-none transition-all duration-300;
+  }
+
+  .custom-phone-input .form-control:focus {
+    @apply border-green-500;
+    box-shadow: none;
+  }
+
+  .custom-phone-input .form-control:disabled {
+    @apply bg-gray-200;
+  }
+
+  .custom-phone-input .flag-dropdown {
+    @apply bg-gray-100 border border-gray-300 rounded-md;
+  }
+
+  .custom-phone-input .flag-dropdown:hover {
+    @apply bg-gray-200;
+  }
+
 }
+
