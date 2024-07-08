@@ -77,5 +77,4 @@ const PricingBox = (props: {
     </div>
   );
 };
-
 export default PricingBox;
