@@ -88,12 +88,7 @@ const Livedemo = () => {
                 </div>
                 {activeContent === "livedemo" ? (
                   <div>
-                    <h4 className="mb-4 text-xl font-semibold text-center text-black dark:text-white">
-                      Live Demo Content
-                    </h4>
-                    <p className="text-center text-base font-medium text-body-color mb-8">
-                      This is the content for the live demo.
-                    </p>
+                     
                     <div className="mb-8">
                       <label
                         htmlFor="phone"
