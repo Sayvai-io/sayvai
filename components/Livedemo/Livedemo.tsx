@@ -86,9 +86,8 @@ const Livedemo = () => {
                   </button>
                   </div>
                 </div>
-                {activeContent === "livedemo" ? (
+                {activeContent === "livedemo" && (
                   <div>
-                     
                     <div className="mb-8">
                       <label
                         htmlFor="phone"
@@ -96,7 +95,7 @@ const Livedemo = () => {
                       >
                         Phone Number
                       </label>
-                       <CustomPhoneInput
+                      <CustomPhoneInput
                         country={'in'}
                         value={phone}
                         onChange={(phone: string) => setPhone(phone)}
@@ -104,16 +103,8 @@ const Livedemo = () => {
                       />
                     </div>
                   </div>
-                ) : (
-                  <div>
-                    <h4 className="mb-4 text-xl font-semibold text-center text-black dark:text-white">
-                      Webcall Content
-                    </h4>
-                    <p className="text-center text-base font-medium text-body-color">
-                      This is the content for the web call.
-                    </p>
-                  </div>
                 )}
+
 
                 <form onSubmit={handleSubmit}>
                   <div className="mb-8">
