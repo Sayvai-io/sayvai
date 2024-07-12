@@ -57,14 +57,14 @@ const Header = () => {
                 } `}
               >
                 <Image
-                  src="/images/logo/logo-2.svg"
+                  src="/images/logo/logo.svg"
                   alt="logo"
                   width={140}
                   height={30}
                   className="w-full dark:hidden"
                 />
                 <Image
-                  src="/images/logo/logo.svg"
+                  src="/images/logo/logo-dark.svg"
                   alt="logo"
                   width={140}
                   height={30}
@@ -110,7 +110,7 @@ const Header = () => {
                         {menuItem.path ? (
                           <Link
                             href={menuItem.path}
-                            className={`flex py-2 text-base lg:mr-0 lg:inline-flex lg:px-0 lg:py-6 ${
+                            className={`flex py-2 text-base lg:mr-5 lg:inline-flex lg:px-0 lg:py-6 ${
                               usePathName === menuItem.path
                                 ? "text-[#45988e] dark:text-white"
                                 : "text-dark hover:text-[#45988e] dark:text-white/70 dark:hover:text-white"

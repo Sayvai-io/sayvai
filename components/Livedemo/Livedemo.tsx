@@ -72,32 +72,22 @@ const Livedemo = () => {
                 <p className="mb-11 text-center text-base font-medium text-body-color">
                   Feel the state-of-the-art Voice Interaction
                 </p>
-
                 <div className="border-b border-[#45988e] mb-6">
                   <div className="mb-6 grid grid-cols-2 text-center">
-                    <button
-                      onClick={() => setActiveContent("livedemo")}
-                      className={`shadow-submit dark:shadow-submit-dark flex w-full items-center justify-center rounded-tl-sm rounded-tr-sm px-2 py-4 text-base font-medium text-white duration-300 ${activeContent === "livedemo" ? 'bg-[#45dbbf]/90' : 'bg-[#40e1c4]'}`}
-                    >
-                      Receive A Phone Call
-                    </button>
-                    <button
-                      onClick={() => setActiveContent("webcall")}
-                      className={`shadow-submit dark:shadow-submit-dark flex w-full items-center justify-center rounded-tl-sm rounded-tr-sm px-9 py-4 text-base font-medium text-white duration-300 ${activeContent === "webcall" ? 'bg-[#45dbbf]/90' : 'bg-[#40e1c4]'}`}
-                    >
-                      Try on Webcall
-                    </button>
+                  <button onClick={() => setActiveContent("livedemo")} className={`flex w-full items-center justify-center rounded-tl-xl rounded-tr-xl px-9 py-4 text-base font-medium duration-300 
+                    ${activeContent === "livedemo" ? 'bg-[#45dbbf]/90 dark:bg-[#358d80]/90 text-white' : 'bg-transparent text-[#45dbbf]'} border-2 border-transparent hover:border-white dark:hover:border-gray-700 active:shadow-xl active:brightness-110 active:scale-95`}
+                  >
+                  Receive A Phone Call
+                 </button>
+                 <button onClick={() => setActiveContent("webcall")}className={`flex w-full items-center justify-center rounded-tl-xl rounded-tr-xl px-9 py-4 text-base font-medium duration-300 
+                    ${activeContent === "webcall" ? 'bg-[#45dbbf]/90 dark:bg-[#358d80]/90 text-white' : 'bg-transparent text-[#45dbbf]'} border-2 border-transparent hover:border-white dark:hover:border-gray-700 active:shadow-xl active:brightness-110 active:scale-95`}
+                  >
+                  Try on Webcall
+                  </button>
                   </div>
                 </div>
-
-                {activeContent === "livedemo" ? (
+                {activeContent === "livedemo" && (
                   <div>
-                    <h4 className="mb-4 text-xl font-semibold text-center text-black dark:text-white">
-                      Live Demo Content
-                    </h4>
-                    <p className="text-center text-base font-medium text-body-color mb-8">
-                      This is the content for the live demo.
-                    </p>
                     <div className="mb-8">
                       <label
                         htmlFor="phone"
@@ -105,7 +95,7 @@ const Livedemo = () => {
                       >
                         Phone Number
                       </label>
-                       <CustomPhoneInput
+                      <CustomPhoneInput
                         country={'in'}
                         value={phone}
                         onChange={(phone: string) => setPhone(phone)}
@@ -113,16 +103,8 @@ const Livedemo = () => {
                       />
                     </div>
                   </div>
-                ) : (
-                  <div>
-                    <h4 className="mb-4 text-xl font-semibold text-center text-black dark:text-white">
-                      Webcall Content
-                    </h4>
-                    <p className="text-center text-base font-medium text-body-color">
-                      This is the content for the web call.
-                    </p>
-                  </div>
                 )}
+
 
                 <form onSubmit={handleSubmit}>
                   <div className="mb-8">
@@ -159,8 +141,10 @@ const Livedemo = () => {
                   </div>
 
                   <div className="flex items-center justify-center">
-                    <button className="shadow-submit dark:shadow-submit-dark flex items-center justify-center rounded-full bg-[#45988e] px-4 py-4 text-base font-medium text-white duration-300 hover:bg-[#45988e]/90">
-                      Get the call
+                  <button className="shadow-submit dark:shadow-submit-dark flex items-center justify-center rounded-full px-4 py-4 text-base font-medium text-white duration-300 bg-[#45988e] hover:bg-[#45988e]/90 dark:bg-[#2e5d56] dark:hover:bg-[#2e5d56]/90
+                    border-2 border-transparent hover:border-white dark:hover:border-gray-700 active:shadow-xl active:brightness-110 active:scale-95"
+                   >                     
+                    Get the call
                     </button>
                   </div>
                 </form>
