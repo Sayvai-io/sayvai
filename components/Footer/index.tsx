@@ -17,7 +17,7 @@ const Footer = () => {
                 <div className="w-60 max-w-full px-4 xl:mr-12">
                 <Link
                 href="/">        
-                <div className="flex items-center ">
+                <div className="flex items-center  ">
 
                 <Image
                   src="/images/logo/logo.svg"

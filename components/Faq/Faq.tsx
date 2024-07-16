@@ -37,8 +37,8 @@ const dataQA = [
 
 const Faq: React.FC = () => {
     return (
-        <div className="px-4 sm:px-6 lg:px-8 py-8 sm:py-10 lg:py-12">
-            <div className="container">
+<div className="pl-4 sm:px-6 lg:px-8 py-8 sm:py-10 lg:py-12">       
+         <div className="container">
         <SectionTitle
           title="Frequently Asked Questions"
           subtitle=""
