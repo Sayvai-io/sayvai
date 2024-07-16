@@ -12,24 +12,11 @@ const featuresData: Feature[] = [
         <path d="M23.2222 0C22.6699 0 22.2222 0.447715 22.2222 1V12.3333C22.2222 12.8856 22.6699 13.3333 23.2222 13.3333H39C39.5523 13.3333 40 12.8856 40 12.3333V0.999999C40 0.447714 39.5523 0 39 0H23.2222ZM0 39C0 39.5523 0.447715 40 1 40H16.7778C17.3301 40 17.7778 39.5523 17.7778 39V27.6667C17.7778 27.1144 17.3301 26.6667 16.7778 26.6667H1C0.447716 26.6667 0 27.1144 0 27.6667V39ZM0 21.2222C0 21.7745 0.447715 22.2222 1 22.2222H16.7778C17.3301 22.2222 17.7778 21.7745 17.7778 21.2222V0.999999C17.7778 0.447714 17.3301 0 16.7778 0H1C0.447716 0 0 0.447715 0 1V21.2222Z" />
       </svg>
     ),
-    title: "Boost Productivity",
+    title: "Personalised Interactions",
     paragraph:
-      "Sayvai's AI solutions streamline workflows and automate repetitive tasks, enabling businesses to accomplish more in less time and with fewer resources." },
+      "Sayvai's AI bot transforms interactions by mimicking human personalities, offering personalised touch. It adapts to each user's preferences, ensuring engaging and relevant communication helping in fostering stronger connections." },
+ 
     {
-    id: 1,
-    icon: (
-      <svg width="40" height="40" viewBox="0 0 40 40" className="fill-current">
-        <path
-          opacity="0.5"
-          d="M20.5914 34.2584C20.2394 34.5172 19.7603 34.5175 19.408 34.2593L4.19163 23.1079C3.8395 22.8498 3.36065 22.85 3.00873 23.1084L1.09802 24.5111C0.553731 24.9107 0.553731 25.7237 1.09802 26.1233L19.4082 39.5655C19.7604 39.824 20.2396 39.824 20.5918 39.5655L38.9029 26.1226C39.4469 25.7232 39.4473 24.9107 38.9036 24.5109L36.9701 23.0889C36.6177 22.8298 36.1378 22.8297 35.7854 23.0888L20.5914 34.2584Z"
-        />
-        <path d="M19.408 28.931C19.7603 29.1896 20.2396 29.1894 20.5918 28.9306L36.3556 17.3466L38.8979 15.4883C39.4437 15.0894 39.4446 14.275 38.8996 13.8749L20.5918 0.43445C20.2396 0.175911 19.7604 0.175913 19.4082 0.434452L1.09706 13.8774C0.553051 14.2767 0.552712 15.0892 1.09638 15.4891L3.62222 17.3466L19.408 28.931Z" />
-      </svg>
-    ),
-    title: "Seamless Integrations",
-    paragraph:
-    "Sayvai's AI systems seamlessly integrate with existing software and processes, ensuring a smooth transition and minimal disruption to operations."  },
-  {
     id: 1,
     icon: (
       <svg width="40" height="40" viewBox="0 0 40 40" className="fill-current">
@@ -40,9 +27,9 @@ const featuresData: Feature[] = [
         <path d="M20 15C22.75 15 25 17.25 25 20C25 22.75 22.75 25 20 25C17.25 25 15 22.75 15 20C15 17.25 17.25 15 20 15ZM20 0C22.75 0 25 2.25 25 5C25 7.75 22.75 10 20 10C17.25 10 15 7.75 15 5C15 2.25 17.25 0 20 0ZM5 30C7.75 30 10 32.25 10 35C10 37.75 7.75 40 5 40C2.25 40 0 37.75 0 35C0 32.25 2.25 30 5 30ZM5 15C7.75 15 10 17.25 10 20C10 22.75 7.75 25 5 25C2.25 25 0 22.75 0 20C0 17.25 2.25 15 5 15ZM5 0C7.75 0 10 2.25 10 5C10 7.75 7.75 10 5 10C2.25 10 0 7.75 0 5C0 2.25 2.25 0 5 0ZM35 0C37.75 0 40 2.25 40 5C40 7.75 37.75 10 35 10C32.25 10 30 7.75 30 5C30 2.25 32.25 0 35 0Z" />
       </svg>
     ),
-    title: "Enhanced Efficiency",
+    title: "Bot Vault",
     paragraph:
-     "By leveraging AI technology, Sayvai helps businesses optimize their processes, identify bottlenecks, and eliminate inefficiencies, leading to increased productivity and cost savings."  },
+     "Our AI chatbot and voice bot services are ready to assist. Around-the-clock AI chatbot help for quick replies and voicebot provide instant voice-activated assistance for your business needs."  },
   {
     id: 1,
     icon: (
@@ -56,7 +43,7 @@ const featuresData: Feature[] = [
     ),
     title: "Data Security",
     paragraph:
-      "Sayvai prioritizes data security and implements robust measures to protect sensitive information, providing businesses with peace of mind and ensuring compliance with regulatory requirements.",
+      "Sayvai makes data security a top priority and uses strong methods to keep sensitive data safe, providing companies comfort and making sure they meet compliance requirements.",
   },
   {
     id: 1,
@@ -69,9 +56,9 @@ const featuresData: Feature[] = [
         <rect width="28" height="28" rx="1" />
       </svg>
     ),
-    title: "Personalized Interactions",
+    title: "Extensibility",
     paragraph:
-    "Sayvai's AI systems mimic human personalities, providing personalized interactions with customers and clients that enhance engagement, satisfaction, and loyalty."
+    "Sayvai's AI solutions are designed to scale with businesses as they grow, ensuring that they remain flexible and adaptable to changing needs and demands."
     },
   {
     id: 1,
@@ -84,9 +71,9 @@ const featuresData: Feature[] = [
         <path d="M18.9474 32.6316C18.9474 35.4705 19.8099 38.0969 21.2941 40.2796C21.7904 41.0094 21.3054 42.1053 20.4229 42.1053H4.21053C1.87368 42.1053 0 40.2316 0 37.8947V4.21053C0 1.89474 1.87368 0 4.21053 0H6.31579H16.8421H29.4737C31.7895 0 33.6842 1.87368 33.6842 4.21053V17.9544C33.6842 18.5032 33.1804 18.9474 32.6316 18.9474C25.0737 18.9474 18.9474 25.0737 18.9474 32.6316Z" />
       </svg>
     ),
-    title: "Actionable Insights",
+    title: "Competitive Advantage",
     paragraph:
-     "Sayvai's AI analytics capabilities provide businesses with valuable insights into their operations, customer behaviour, and market trends, empowering informed decision-making and strategic planning." 
+     "By using AI power, Sayvai enables companies to get ahead in their field by supporting innovation and setting them apart from others." 
      },
   
      {
@@ -100,42 +87,11 @@ const featuresData: Feature[] = [
           <rect width="28" height="28" rx="1" />
         </svg>
       ),
-      title: "Scalability",
+      title: "Financial optimization",
       paragraph:
-      "Sayvai's AI solutions are designed to scale with businesses as they grow, ensuring that they remain flexible and adaptable to changing needs and demands."
+      "Sayvai's AI tools help companies cut down on overhead expenses, better allocate resources, and improve operational efficiency, which leads to significant savings over time."
       },
 
-      {
-        id: 1,
-        icon: (
-          <svg width="40" height="40" viewBox="0 0 40 40" className="fill-current">
-            <path
-              opacity="0.5"
-              d="M39 12C39.5523 12 40 12.4477 40 13V39C40 39.5523 39.5523 40 39 40H13C12.4477 40 12 39.5523 12 39V33C12 32.4477 12.4477 32 13 32H31C31.5523 32 32 31.5523 32 31V13C32 12.4477 32.4477 12 33 12H39Z"
-            />
-            <rect width="28" height="28" rx="1" />
-          </svg>
-        ),
-        title: "Competitive Advantage",
-        paragraph:
-        "By harnessing the power of AI, Sayvai helps businesses gain a competitive edge in their industry, enabling them to innovate, differentiate, and stay ahead of the competition."
-        },
-
-        {
-          id: 1,
-          icon: (
-            <svg width="40" height="40" viewBox="0 0 40 40" className="fill-current">
-              <path
-                opacity="0.5"
-                d="M39 12C39.5523 12 40 12.4477 40 13V39C40 39.5523 39.5523 40 39 40H13C12.4477 40 12 39.5523 12 39V33C12 32.4477 12.4477 32 13 32H31C31.5523 32 32 31.5523 32 31V13C32 12.4477 32.4477 12 33 12H39Z"
-              />
-              <rect width="28" height="28" rx="1" />
-            </svg>
-          ),
-          title: "Cost Savings",
-          paragraph:
-          "Sayvai's AI solutions help businesses reduce overhead costs, improve resource allocation, and optimize efficiency, leading to significant cost savings over time."
-          },
-        
+       
 ];
 export default featuresData;
