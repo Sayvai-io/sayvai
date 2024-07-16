@@ -14,10 +14,10 @@ const Footer = () => {
             
             <div className="w-full px-4 md:w-1/2 lg:w-4/12 xl:w-5/12">
               <div className="mb-12 max-w-[360px] lg:mb-16">
-              <div className="w-60 max-w-full px-4 xl:mr-12">
-              <Link
+                <div className="w-60 max-w-full px-4 xl:mr-12">
+                <Link
                 href="/">        
-                <div className="flex items-center">
+                <div className="flex items-center ">
 
                 <Image
                   src="/images/logo/logo.svg"
@@ -37,7 +37,7 @@ const Footer = () => {
               </Link>
             </div>
                  
-                <div className="flex items-center">
+                <div className="flex items-center p-12">
                   <a
                     href="/"
                     aria-label="social-link"
