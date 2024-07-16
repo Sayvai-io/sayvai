@@ -9,7 +9,7 @@ const Features = () => {
         <div className="container">
           <SectionTitle
             title=" Platform Features"
-            subtitle="Explore our platform's integrated features designed To propel business growth and success."
+            subtitle="Explore our platform's integrated features designed to propel business growth and success."
             paragraph=""//Pass empty string to not render paragraph
             center
           />

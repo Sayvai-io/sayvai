@@ -67,7 +67,7 @@ const Livedemo = () => {
             <div className="w-full px-4">
               <div className="mx-auto max-w-[500px] rounded px-6 py-6 dark:bg-dark sm:p-[60px]">
                 <h3 className="mb-3 text-center text-2xl font-bold text-black dark:text-white sm:text-3xl">
-                  See A Live Demo
+                Get a live demo
                 </h3>
                 <p className="mb-11 text-center text-base font-medium text-body-color">
                   Feel the state-of-the-art Voice Interaction
