@@ -20,7 +20,7 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Sayvai",
-  description: "sayvai",
+  description: "AI solutions",
   // other metadata
 };
 
