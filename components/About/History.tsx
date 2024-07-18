@@ -20,7 +20,7 @@ const History= () => {
                 <p className="mt-8 text-base font-medium leading-relaxed text-body-color text-justify sm:text-lg sm:leading-relaxed">
                 In September 2023, Sayvai expanded its product offerings with AI voice assistance, inflating its value delivery and setting the stage for sustainable growth.                </p>
                 <p className="mt-8 text-base font-medium leading-relaxed text-body-color text-justify sm:text-lg sm:leading-relaxed">
-                Strategic partnerships with industry leaders strengthened Sayvai market position and opened new opportunities for innovation and expansion.                </p>
+                Strategic partnerships with industry leaders strengthened Sayvai&apos;s market position and opened new opportunities for innovation and expansion.                </p>
                 <p className="mt-8 text-base font-medium leading-relaxed text-body-color text-justify sm:text-lg sm:leading-relaxed">
                 In January 2024, Sayvai launched initiatives to foster collaboration and knowledge-sharing within the AI ecosystem, making entrepreneurs and developers to drive positive change.                </p>
                 <p className="mt-8 text-base font-medium leading-relaxed text-body-color text-justify sm:text-lg sm:leading-relaxed">
