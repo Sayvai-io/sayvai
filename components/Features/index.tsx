@@ -5,11 +5,11 @@ import featuresData from "./featuresData";
 const Features = () => {
   return (
     <>
-      <section id="features" className="py-16 md:py-20 lg:py-28">
+      <section id="features" className="py-16 md:py-20 lg:py-28 text-justify">
         <div className="container">
           <SectionTitle
             title=" Platform Features"
-            subtitle="Explore our platform's integrated features designed To propel business growth and success."
+            subtitle="Explore our platform's integrated features designed to propel business growth and success."
             paragraph=""//Pass empty string to not render paragraph
             center
           />
