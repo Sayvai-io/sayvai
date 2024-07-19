@@ -2,16 +2,26 @@
 import Link from "next/link";
 import { useState, ChangeEvent, FormEvent } from "react";
 
-// export const metadata: Metadata = {
-//   title: "Sign Up Page",
-//   // description: "",
-//   // other metadata
-// };
-
 const SignupPage = () => {
-
+  const [email, setEmail] = useState("");
+  const [emailError, setEmailError] = useState("");
   const [password, setPassword] = useState("");
   const [passwordError, setPasswordError] = useState("");
+
+  const handleEmailChange = (e: ChangeEvent<HTMLInputElement>) => {
+    const newEmail = e.target.value;
+    setEmail(newEmail);
+
+    // Regular expression for work email validation
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    const workEmailDomain = "company.com";
+
+    if (!emailRegex.test(newEmail) || !newEmail.endsWith(`@${workEmailDomain}`)) {
+      setEmailError("Please enter a valid work email (e.g., user@company.com).");
+    } else {
+      setEmailError("");
+    }
+  };
 
   const handlePasswordChange = (e: ChangeEvent<HTMLInputElement>) => {
     const newPassword = e.target.value;
@@ -33,9 +43,11 @@ const SignupPage = () => {
   const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     // Perform further form submission logic here
-    if (!passwordError) {
+    if (!emailError && !passwordError) {
       // Proceed with form submission
       console.log("Form submitted");
+    } else {
+      console.log("Form contains errors.");
     }
   };
   return (
@@ -136,9 +148,14 @@ const SignupPage = () => {
                     <input
                       type="email"
                       name="email"
+                      value={email}
+                      onChange={handleEmailChange}
                       placeholder="Enter your Email"
                       className="border-stroke dark:text-body-color-dark dark:shadow-two w-full rounded-sm border bg-[#f8f8f8] px-6 py-3 text-base text-body-color outline-none transition-all duration-300 focus:border-[#16C3A6] dark:border-transparent dark:bg-[#2C303B] dark:focus:border-[#16C3A6] dark:focus:shadow-none"
                     />
+                    {emailError && (
+                     <p className="mt-1 text-sm text-red-500">{emailError}</p>
+                    )}
                   </div>
                   <div className="mb-8">
                     <label
