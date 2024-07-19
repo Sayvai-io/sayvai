@@ -30,9 +30,8 @@ const Culture = () => {
                 <h3 className="mb-4 text-xl font-bold text-black dark:text-white sm:text-2xl lg:text-xl xl:text-2xl">
                  COMPANY CULTURE
                 </h3>
-                <p className="text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed">
-                At Sayvai, our culture is built on the foundation of collaboration, innovation, and empathy. We believe in fostering a supportive and inclusive environment where every team member is valued, respected, and empowered to reach their full potential. We embrace diversity in perspectives, experiences, and backgrounds, recognizing that it fuels creativity and drives meaningful change. Our culture encourages curiosity, continuous learning, and a growth mindset, as we navigate the ever-evolving landscape of technology and business. We celebrate success, learn from failure, and approach challenges with resilience, determination, and a sense of humor. Together, ww are not just building AI solutions—we are building a community that thrives on passion, purpose, and human connection.
-                </p>
+                <p className="text-base font-medium leading-relaxed text-body-color text-justify sm:text-lg sm:leading-relaxed">
+                Our culture is built on the foundation of collaboration, innovation, and empathy. We believe in fostering a supportive and inclusive environment where every team member is valued, respected, and motivated to reach their full potential. We embrace diversity in perspectives, experiences, and backgrounds, recognizing that it fuels creativity and drives meaningful change. We encourage curiosity, continuous learning, and a growth mindset, as we navigate theevolving landscape of technology and business. We celebrate success, learn from failure, and approach challenges with resilience, determination, and a sense of humor. Together, we are not just building AI solutions, we are building a community that thrives on passion, purpose, and human connection.                </p>
               </div>
               
               

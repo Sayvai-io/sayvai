@@ -150,7 +150,7 @@ const Testimoni = ({
   const [sliderRef, setSliderRef] = useState<Slider | null>(null);
 
   return (
-    <div className="px-4 md:px-10 lg:px-20">
+    <div className="px-4 md:px-10 lg:px-20 text-justify">
       <div className="container">
         <SectionTitle
           title="INDUSTRIES WE SERVE"
@@ -170,14 +170,14 @@ const Testimoni = ({
         {listTestimoni.map((listTestimonis, index) => (
           <div className="px-3 flex items-stretch" key={index}>
             <div className="shadow-lg dark:shadow-none dark:bg-gray-800 transition-all rounded-lg p-6 md:p-8 flex flex-col hover:border hover:border-[#45988e]">
-              <div className="flex flex-col xl:flex-row w-full items-stretch xl:items-center">
+              <div className="flex flex-col xl:flex-row w-full items-stretch xl:items-center ">
                 <div className="flex order-2 xl:order-1">
-                  <div className="flex flex-col ml-5 text-left">
+                  <div className="flex flex-col ml-5 text-left ">
                     <p className="text-lg text-black-600 dark:text-white capitalize">
                       {listTestimonis.name}
                     </p>
                     
-                    <ul className="list-disc ml-5 mt-2 text-black-600 dark:text-gray-300">
+                    <ul className="list-disc ml-5 mt-2 text-black-600 dark:text-gray-300 ">
                       {listTestimonis.points.map((point, idx) => (
                         <li key={idx} className="text-sm">
                           {point}
