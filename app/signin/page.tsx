@@ -1,14 +1,35 @@
+"use client";
 import Link from "next/link";
-
-import { Metadata } from "next";
-
-export const metadata: Metadata = {
-  title: "Sign In Page",
-  // description: "",
-  // other metadata
-};
+import { useState, ChangeEvent, FormEvent } from "react";
 
 const SigninPage = () => {
+  const [password, setPassword] = useState("");
+  const [passwordError, setPasswordError] = useState("");
+
+  const handlePasswordChange = (e: ChangeEvent<HTMLInputElement>) => {
+    const newPassword = e.target.value;
+    setPassword(newPassword);
+    // Regular expression for the password validation
+    const passwordRegex =
+      /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/;
+
+    if (!passwordRegex.test(newPassword)) {
+      setPasswordError(
+        "Password must be at least 8 characters long, include a capital letter, a small letter, a number, and a symbol."
+      );
+    } else {
+      setPasswordError("");
+    }
+  };
+
+  const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    
+    if (!passwordError) {
+     
+      console.log("Form submitted");
+    }
+  };
   return (
     <>
       <section className="relative z-10 overflow-hidden pb-16 pt-36 md:pb-20 lg:pb-28 lg:pt-[180px]">
@@ -107,7 +128,12 @@ const SigninPage = () => {
                       name="password"
                       placeholder="Enter your Password"
                       className="border-stroke dark:text-body-color-dark dark:shadow-two w-full rounded-sm border bg-[#f8f8f8] px-6 py-3 text-base text-body-color outline-none transition-all duration-300 focus:border-[#16C3A6] dark:border-transparent dark:bg-[#2C303B] dark:focus:border-[#16C3A6] dark:focus:shadow-none"
+                      value={password}
+                      onChange={handlePasswordChange}
                     />
+                    {passwordError && (
+                      <p className="mt-2 text-sm text-red-600">{passwordError}</p>
+                    )}
                   </div>
                   <div className="mb-8 flex flex-col justify-between sm:flex-row sm:items-center">
                     <div className="mb-4 sm:mb-0">
