@@ -11,21 +11,33 @@ const Footer = () => {
       >
         <div className="container">
           <div className="-mx-4 flex flex-wrap">
+            
             <div className="w-full px-4 md:w-1/2 lg:w-4/12 xl:w-5/12">
               <div className="mb-12 max-w-[360px] lg:mb-16">
-                <Link href="/" className="mb-8 inline-block">
-                  
-                <p className="w-full dark:hidden text-[#45988e] font-bold sm:text-4xl sm:leading-tight md:text-5xl md:leading-tight text-3xl">
-                  Sayvai</p>
-                <p className="hidden w-full dark:block text-[#45988e] font-bold sm:text-4xl sm:leading-tight md:text-5xl md:leading-tight text-3xl">
-                  Sayvai</p>
-              
-                </Link>
-                <p className="dark:text-body-color-dark mb-9 text-base leading-relaxed text-body-color">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Integer lobortis.
-                </p>
-                <div className="flex items-center">
+                <div className="w-60 max-w-full px-4 xl:mr-12">
+                <Link
+                href="/">        
+                <div className="flex items-center  ">
+
+                <Image
+                  src="/images/logo/logo.svg"
+                  alt="logo"
+                  width={140}
+                  height={30}
+                  className="w-full dark:hidden "
+                />
+                <Image
+                  src="/images/logo/logo-dark.svg"
+                  alt="logo"
+                  width={140}
+                  height={30}
+                  className="hidden w-full dark:block "
+                  />
+                  </div>
+              </Link>
+            </div>
+                 
+                <div className="flex items-center p-12">
                   <a
                     href="/"
                     aria-label="social-link"

@@ -30,7 +30,7 @@ const AboutSectionTwo = () => {
                 <h3 className="mb-4 text-xl font-bold text-black dark:text-white sm:text-2xl lg:text-xl xl:text-2xl">
                 MILESTONE
                 </h3>
-                <p className="text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed">
+                <p className="text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed text-justify">
                 We are thrilled to announce a monumental achievement in our journey. Sayvai has reached a remarkable milestone, with users now relying on our innovative solutions worldwide. This achievement stands as a testament to our commitment to revolutionizing AI with cutting-edge technology. We extend our heartfelt gratitude to our users, partners, and dedicated team for their unwavering support.
                 </p>
               </div>

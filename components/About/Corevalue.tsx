@@ -1,28 +1,25 @@
 const coreValues = [
     {
       title: "Empathy",
-      content: "We prioritize understanding and compassion in all our interactions, whether with colleagues, clients, or stakeholders. We seek to empathize with the needs, challenges, and aspirations of others, recognizing that empathy is the cornerstone of meaningful relationships and impactful solutions."
+      content: "We prioritize understanding and compassion in all our interactions."
     },
     {
       title: "Innovation",
-      content: "We embrace curiosity, creativity, and bold thinking, challenging the status quo and pushing the boundaries of what's possible. We foster an environment where new ideas are welcomed, experimentation is encouraged, and failure is seen as an opportunity for growth and learning."
+      content: "We embrace curiosity, creativity, and bold thinking."
     },
     {
       title: "Integrity",
-      content: "We uphold the highest standards of honesty, transparency, and ethical behavior in everything we do. We are committed to integrity in our relationships, our work, and our decision-making processes, earning the trust and respect of those we serve."
+      content: "We uphold the highest standards of honesty, transparency, and ethical behavior."
     },
     {
       title: "Collaboration",
-      content: "We believe in the power of teamwork and collaboration, recognizing that diverse perspectives and collective effort lead to better outcomes. We value open communication, active listening, and constructive feedback, working together to achieve shared goals and support each other's success."
+      content: "We believe in the power of teamwork and collaboration."
     },
     {
       title: "Excellence",
-      content: "We are driven by a relentless pursuit of excellence in everything we undertake. We set high standards for ourselves and hold ourselves accountable for delivering exceptional results that exceed expectations. We are committed to continuous improvement, striving to learn, grow, and evolve with every challenge we face."
-    },
-    {
-      title: "Empowerment",
-      content: "We believe in empowering individuals to take ownership of their work, make meaningful contributions, and drive positive change. We provide opportunities for personal and professional development, nurturing talent and leadership at every level of the organization. We trust and empower our team members to make decisions, take risks, and innovate with confidence."
+      content: "We are driven by a relentless pursuit of excellence."
     }
+     
   ];
   
   const Corevalue = () => {

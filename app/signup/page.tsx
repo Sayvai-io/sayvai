@@ -1,14 +1,42 @@
+"use client";
 import Link from "next/link";
+import { useState, ChangeEvent, FormEvent } from "react";
 
-import { Metadata } from "next";
-
-export const metadata: Metadata = {
-  title: "Sign Up Page | Free Next.js Template for Startup and SaaS",
-  description: "This is Sign Up Page for Startup Nextjs Template",
-  // other metadata
-};
+// export const metadata: Metadata = {
+//   title: "Sign Up Page",
+//   // description: "",
+//   // other metadata
+// };
 
 const SignupPage = () => {
+
+  const [password, setPassword] = useState("");
+  const [passwordError, setPasswordError] = useState("");
+
+  const handlePasswordChange = (e: ChangeEvent<HTMLInputElement>) => {
+    const newPassword = e.target.value;
+    setPassword(newPassword);
+    // Regular expression for the password validation
+    const passwordRegex =
+      /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/;
+
+    if (!passwordRegex.test(newPassword)) {
+      setPasswordError(
+        "Password must be at least 8 characters long, include a capital letter, a small letter, a number, and a symbol."
+      );
+    } else {
+      setPasswordError("");
+    }
+  };
+
+  const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    
+    if (!passwordError) {
+     
+      console.log("Form submitted");
+    }
+  };
   return (
     <>
       <section className="relative z-10 overflow-hidden pb-16 pt-36 md:pb-20 lg:pb-28 lg:pt-[180px]">
@@ -16,32 +44,13 @@ const SignupPage = () => {
           <div className="-mx-4 flex flex-wrap">
             <div className="w-full px-4">
               <div className="shadow-three mx-auto max-w-[500px] rounded bg-white px-6 py-10 dark:bg-dark sm:p-[60px]">
-              
-                <h3 className="mb-3 text-center text-2xl font-bold text-black dark:text-white sm:text-3xl">
+                <h3 className="mb-3 text-center text-2xl font-bold text-[#16C3A6] dark:text-[#16C3A6] sm:text-3xl">
                   Create your account
                 </h3>
                 <p className="mb-11 text-center text-base font-medium text-body-color">
                   It’s totally free and super easy
                 </p>
-                <div className="border-b border-[#45988e] mb-6">
-                <div className="mb-6 grid grid-cols-2 text-center">
-                  <Link href="signin" className="text-sm font-medium text-[#45988e] hover:underline">
-                    
-                  <button className="shadow-submit dark:shadow-submit-dark flex w-full items-center justify-center rounded-sm bg-[#45988e] px-9 py-4 text-base font-medium text-white duration-300 hover:bg-[#45988e]/90">
-                      Signin
-                  </button>
-                    
-                  </Link>
-                  <Link href="/signup" className="text-sm font-medium text-[#45988e] hover:underline">
-                    
-                  <button className="shadow-submit dark:shadow-submit-dark flex w-full items-center justify-center rounded-sm bg-[#45988e] px-9 py-4 text-base font-medium text-white duration-300 hover:bg-[#45988e]/90">
-                      Signup
-                  </button>
-                    
-                  </Link>
-                </div>
-                </div>
-                <button className="border-stroke dark:text-body-color-dark dark:shadow-two mb-6 flex w-full items-center justify-center rounded-sm border bg-[#f8f8f8] px-6 py-3 text-base text-body-color outline-none transition-all duration-300 hover:border-primary hover:bg-primary/5 hover:text-primary dark:border-transparent dark:bg-[#2C303B] dark:hover:border-[#45988e] dark:hover:bg-primary/5 dark:hover:text-[#45988e] dark:hover:shadow-none">
+                <button className="border-stroke dark:text-body-color-dark dark:shadow-two mb-6 flex w-full items-center justify-center rounded-sm border bg-[#f8f8f8] px-6 py-3 text-base text-body-color outline-none transition-all duration-300 hover:border-[#16C3A6] hover:bg-primary/5 hover:text-[#16C3A6] dark:border-transparent dark:bg-[#2C303B] dark:hover:border-[#16C3A6] dark:hover:bg-primary/5 dark:hover:text-[#16C3A6] dark:hover:shadow-none">
                   <span className="mr-3">
                     <svg
                       width="20"
@@ -78,7 +87,7 @@ const SignupPage = () => {
                   Sign in with Google
                 </button>
 
-                <button className="border-stroke dark:text-body-color-dark dark:shadow-two mb-6 flex w-full items-center justify-center rounded-sm border bg-[#f8f8f8] px-6 py-3 text-base text-body-color outline-none transition-all duration-300 hover:border-[#45988e] hover:bg-primary/5 hover:text-[#45988e] dark:border-transparent dark:bg-[#2C303B] dark:hover:border-[#45988e] dark:hover:bg-primary/5 dark:hover:text-[#45988e] dark:hover:shadow-none">
+                {/* <button className="border-stroke dark:text-body-color-dark dark:shadow-two mb-6 flex w-full items-center justify-center rounded-sm border bg-[#f8f8f8] px-6 py-3 text-base text-body-color outline-none transition-all duration-300 hover:border-primary hover:bg-primary/5 hover:text-primary dark:border-transparent dark:bg-[#2C303B] dark:hover:border-primary dark:hover:bg-primary/5 dark:hover:text-primary dark:hover:shadow-none">
                   <span className="mr-3">
                     <svg
                       fill="currentColor"
@@ -91,7 +100,7 @@ const SignupPage = () => {
                     </svg>
                   </span>
                   Sign in with Github
-                </button>
+                </button> */}
                 <div className="mb-8 flex items-center justify-center">
                   <span className="hidden h-[1px] w-full max-w-[60px] bg-body-color/50 sm:block"></span>
                   <p className="w-full px-5 text-center text-base font-medium text-body-color">
@@ -112,7 +121,7 @@ const SignupPage = () => {
                       type="text"
                       name="name"
                       placeholder="Enter your full name"
-                      className="border-stroke dark:text-body-color-dark dark:shadow-two w-full rounded-sm border bg-[#f8f8f8] px-6 py-3 text-base text-body-color outline-none transition-all duration-300 focus:border-[#45988e] dark:border-transparent dark:bg-[#2C303B] dark:focus:border-[#45988e] dark:focus:shadow-none"
+                      className="border-stroke dark:text-body-color-dark dark:shadow-two w-full rounded-sm border bg-[#f8f8f8] px-6 py-3 text-base text-body-color outline-none transition-all duration-300 focus:border-[#16C3A6] dark:border-transparent dark:bg-[#2C303B] dark:focus:border-[#16C3A6] dark:focus:shadow-none"
                     />
                   </div>
                   <div className="mb-8">
@@ -127,7 +136,7 @@ const SignupPage = () => {
                       type="email"
                       name="email"
                       placeholder="Enter your Email"
-                      className="border-stroke dark:text-body-color-dark dark:shadow-two w-full rounded-sm border bg-[#f8f8f8] px-6 py-3 text-base text-body-color outline-none transition-all duration-300 focus:border-[#45988e] dark:border-transparent dark:bg-[#2C303B] dark:focus:border[#45988e] dark:focus:shadow-none"
+                      className="border-stroke dark:text-body-color-dark dark:shadow-two w-full rounded-sm border bg-[#f8f8f8] px-6 py-3 text-base text-body-color outline-none transition-all duration-300 focus:border-[#16C3A6] dark:border-transparent dark:bg-[#2C303B] dark:focus:border-[#16C3A6] dark:focus:shadow-none"
                     />
                   </div>
                   <div className="mb-8">
@@ -135,15 +144,19 @@ const SignupPage = () => {
                       htmlFor="password"
                       className="mb-3 block text-sm text-dark dark:text-white"
                     >
-                      {" "}
-                      Your Password{" "}
+                      Your Password
                     </label>
                     <input
                       type="password"
                       name="password"
-                      placeholder="Enter your Password"
-                      className="border-stroke dark:text-body-color-dark dark:shadow-two w-full rounded-sm border bg-[#f8f8f8] px-6 py-3 text-base text-body-color outline-none transition-all duration-300 focus:border-[#45988e] dark:border-transparent dark:bg-[#2C303B] dark:focus:border-[#45988e] dark:focus:shadow-none"
+                      placeholder="Enter password"
+                      className="border-stroke dark:text-body-color-dark dark:shadow-two w-full rounded-sm border bg-[#f8f8f8] px-6 py-3 text-base text-body-color outline-none transition-all duration-300 focus:border-[#16C3A6] dark:border-transparent dark:bg-[#2C303B] dark:focus:border-[#16C3A6] dark:focus:shadow-none"
+                      value={password}
+                      onChange={handlePasswordChange}
                     />
+                    {passwordError && (
+                      <p className="mt-2 text-sm text-red-600">{passwordError}</p>
+                    )}
                   </div>
                   <div className="mb-8 flex">
                     <label
@@ -167,8 +180,8 @@ const SignupPage = () => {
                             >
                               <path
                                 d="M10.0915 0.951972L10.0867 0.946075L10.0813 0.940568C9.90076 0.753564 9.61034 0.753146 9.42927 0.939309L4.16201 6.22962L1.58507 3.63469C1.40401 3.44841 1.11351 3.44879 0.932892 3.63584C0.755703 3.81933 0.755703 4.10875 0.932892 4.29224L0.932878 4.29225L0.934851 4.29424L3.58046 6.95832C3.73676 7.11955 3.94983 7.2 4.1473 7.2C4.36196 7.2 4.55963 7.11773 4.71406 6.9584L10.0468 1.60234C10.2436 1.4199 10.2421 1.1339 10.0915 0.951972ZM4.2327 6.30081L4.2317 6.2998C4.23206 6.30015 4.23237 6.30049 4.23269 6.30082L4.2327 6.30081Z"
-                                fill="#3056D3"
-                                stroke="#3056D3"
+                                fill="#16C3A6"
+                                stroke="#16C3A6"
                                 strokeWidth="0.4"
                               />
                             </svg>
@@ -177,12 +190,12 @@ const SignupPage = () => {
                       </div>
                       <span>
                         By creating account means you agree to the
-                        <a href="#0" className="text-[#45988e] hover:underline">
+                        <a href="#0" className="text-[#16C3A6] hover:underline">
                           {" "}
                           Terms and Conditions{" "}
                         </a>
                         , and our
-                        <a href="#0" className="text-[#45988e] hover:underline">
+                        <a href="#0" className="text-[#16C3A6] hover:underline">
                           {" "}
                           Privacy Policy{" "}
                         </a>
@@ -190,14 +203,14 @@ const SignupPage = () => {
                     </label>
                   </div>
                   <div className="mb-6">
-                    <button className="shadow-submit dark:shadow-submit-dark flex w-full items-center justify-center rounded-sm bg-[#45988e] px-9 py-4 text-base font-medium text-white duration-300 hover:bg-[#45988e]/90">
+                    <button className="shadow-submit dark:shadow-submit-dark flex w-full items-center justify-center rounded-sm bg-[#16C3A6] px-9 py-4 text-base font-medium text-white duration-300 hover:bg-[#16C3A6]/90">
                       Sign up
                     </button>
                   </div>
                 </form>
                 <p className="text-center text-base font-medium text-body-color">
                   Already using Startup?{" "}
-                  <Link href="/signin" className="text-[#45988e] hover:underline">
+                  <Link href="/signin" className="text-[#16C3A6] hover:underline">
                     Sign in
                   </Link>
                 </p>
@@ -222,7 +235,7 @@ const SignupPage = () => {
               width="1440"
               height="969"
             >
-              <rect width="1440" height="969" fill="#090E34" />
+              <rect width="1440" height="969" fill="#16C3A6" />
             </mask>
             <g mask="url(#mask0_95:1005)">
               <path
@@ -245,8 +258,8 @@ const SignupPage = () => {
                 y2="453.581"
                 gradientUnits="userSpaceOnUse"
               >
-                <stop stopColor="#4A6CF7" />
-                <stop offset="1" stopColor="#4A6CF7" stopOpacity="0" />
+                <stop stopColor="#16C3A6" />
+                <stop offset="1" stopColor="#16C3A6" stopOpacity="0" />
               </linearGradient>
               <linearGradient
                 id="paint1_linear_95:1005"
@@ -256,8 +269,8 @@ const SignupPage = () => {
                 y2="1192.04"
                 gradientUnits="userSpaceOnUse"
               >
-                <stop stopColor="#4A6CF7" />
-                <stop offset="1" stopColor="#4A6CF7" stopOpacity="0" />
+                <stop stopColor="#16C3A6" />
+                <stop offset="1" stopColor="#16C3A6" stopOpacity="0" />
               </linearGradient>
             </defs>
           </svg>
