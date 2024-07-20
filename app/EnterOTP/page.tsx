@@ -72,7 +72,7 @@ const EnterOTP = () => {
                   <p className="text-center text-base font-medium text-body-color">
                   Didn&apos;t receive code?{" "}
                   <Link href="/forgetpassword" className="text-[#16C3A6] hover:underline">
-                    Request again
+                    Request OTP
                   </Link>
                   </p>
                     
