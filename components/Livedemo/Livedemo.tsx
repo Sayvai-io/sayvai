@@ -141,11 +141,9 @@ const Livedemo = () => {
                   </div>
 
                   <div className="flex items-center justify-center">
-                  <button className="shadow-submit dark:shadow-submit-dark flex items-center justify-center rounded-full px-4 py-4 text-base font-medium text-white duration-300 bg-[#45988e] hover:bg-[#45988e]/90 dark:bg-[#2e5d56] dark:hover:bg-[#2e5d56]/90
-                    border-2 border-transparent hover:border-white dark:hover:border-gray-700 active:shadow-xl active:brightness-110 active:scale-95"
-                   >                     
-                    Get the call
-                    </button>
+                  <button className="rounded-full bg-[#45988e] px-8 py-4 text-base font-semibold text-white duration-300 ease-in-out transform hover:scale-105 active:scale-95">
+                  Get the call
+                   </button>
                   </div>
                 </form>
               </div>
