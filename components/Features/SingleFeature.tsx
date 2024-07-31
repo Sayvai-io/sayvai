@@ -15,9 +15,20 @@ const SingleFeature = ({ feature }: { feature: Feature }) => {
           {paragraph}
         </p>
       </div>
-      <div className="absolute inset-0 rounded-3xl overflow-hidden">
-        <div className="absolute inset-0 bg-[#16C3A6] transition-all duration-700 ease-in-out transform scale-0 origin-bottom-left group-hover:scale-100 group-hover:opacity-100 opacity-0 rounded-3xl shadow-[0_10px_30px_rgba(0,0,0,0.15)]" />
-      </div>
+      <div className="absolute inset-0 rounded-none overflow-hidden">
+    <div className="absolute inset-0 bg-[#16C3A6] transition-all duration-300 ease-in-out transform scale-0 origin-bottom-left group-hover:scale-100 group-hover:opacity-100 opacity-0 shadow-[0_10px_30px_rgba(0,0,0,0.15)]"
+          style={{
+            borderRadius: '50%',  
+            transformOrigin: 'bottom left',
+            width: '200%',  
+            height: '200%', 
+            top: '-50%',  
+            left: '-50%',  
+          }}
+    
+    />
+  </div>
+
     </div>
   );
 };

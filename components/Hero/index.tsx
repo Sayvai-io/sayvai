@@ -1,5 +1,6 @@
 "use client";
 import Link from "next/link";
+import Image from "next/image";
 import { motion } from "framer-motion";
 
 const Hero = () => {
@@ -26,29 +27,24 @@ const Hero = () => {
                   Sayvai creates <span style={{ color: '#16C3A6' }}>customized AI solutions</span> specialized to your business needs. Our approach ensures smooth integration and impactful results, enabling your business to succeed in a competitive landscape.
                 </p>
 
-                <div className="flex flex-col items-start justify-start space-y-4 sm:flex-row sm:space-x-4 sm:space-y-0">
-                  <Link
-                  href="/signin"
-                  className="rounded-full bg-[#45988e] px-8 py-4 text-base font-semibold text-white duration-300 ease-in-out transform hover:scale-105 active:scale-95"
-                  >
-                  Get started
-                  </Link>
-                  <Link
-                  href="/#"
-                  className="inline-block rounded-full bg-black px-8 py-4 text-base font-semibold text-white duration-300 ease-in-out transform hover:scale-105 active:scale-95 dark:bg-white/10 dark:text-white dark:hover:bg-white/5"
-                  >
-                 View Services
-                 </Link>
-                </div>
+                
 
               </div>
             </motion.div>
           </div>
 
           {/* Right Section */}
-          <div className="flex-1 flex items-center justify-center bg-gray-100">
-            {/* This section is intentionally left empty */}
+          <div className="flex-1 flex items-center justify-center  ">
+          <Image
+            src="/images/home/home5.jpg"
+            alt=""
+            width={380}  
+            height={380}  
+           />
+
           </div>
+
+
         </div>
       </section>
     </>
@@ -56,3 +52,4 @@ const Hero = () => {
 };
 
 export default Hero;
+ 
