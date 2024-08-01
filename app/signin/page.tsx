@@ -1,33 +1,65 @@
 "use client";
 import Link from "next/link";
 import { useState, ChangeEvent, FormEvent } from "react";
+import { supabase } from "../supabaseClient/supabaseClient";
 
 const SigninPage = () => {
+  const [email, setEmail] = useState(""); 
   const [password, setPassword] = useState("");
   const [passwordError, setPasswordError] = useState("");
+  const [emailError, setEmailError] = useState("");
+
+
+  const handleEmailChange = (e: ChangeEvent<HTMLInputElement>) => {
+    const newEmail = e.target.value;
+    setEmail(newEmail);
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+    if (!emailRegex.test(newEmail)) {
+      setEmailError("Please enter a valid email address.");
+    } else {
+      setEmailError("");
+    }
+   
+
+    // if (!isCompanyEmail(newEmail)) {
+    //   setEmailError("Please use your company email (e.g., user@yourcompany.com).");
+    // } else {
+    //   setEmailError("");
+    // }
+  };
+
+
 
   const handlePasswordChange = (e: ChangeEvent<HTMLInputElement>) => {
     const newPassword = e.target.value;
     setPassword(newPassword);
-    // Regular expression for the password validation
-    const passwordRegex =
-      /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/;
+    // // Regular expression for the password validation
+    // const passwordRegex =
+    //   /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/;
 
-    if (!passwordRegex.test(newPassword)) {
-      setPasswordError(
-        "Password must be at least 8 characters long, include a capital letter, a small letter, a number, and a symbol."
-      );
-    } else {
-      setPasswordError("");
-    }
+    // if (!passwordRegex.test(newPassword)) {
+    //   setPasswordError(
+    //     "Password must be at least 8 characters long, include a capital letter, a small letter, a number, and a symbol."
+    //   );
+    // } else {
+    //   setPasswordError("");
+    // }
   };
 
-  const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
+  
+
+  const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    
+
+
     if (!passwordError) {
-     
-      console.log("Form submitted");
+      const { data, error } = await supabase.auth.signInWithPassword({
+        email: email ,
+        password: password ,
+      })
+
+      console.log(data);
     }
   };
   return (
@@ -101,7 +133,7 @@ const SigninPage = () => {
                   </p>
                   <span className="hidden h-[1px] w-full max-w-[70px] bg-body-color/50 sm:block"></span>
                 </div>
-                <form>
+                <form onSubmit={handleSubmit}>
                   <div className="mb-8">
                     <label
                       htmlFor="email"
@@ -112,9 +144,13 @@ const SigninPage = () => {
                     <input
                       type="email"
                       name="email"
+                      onChange={handleEmailChange}
                       placeholder="Enter your Email"
                       className="border-stroke dark:text-body-color-dark dark:shadow-two w-full rounded-sm border bg-[#f8f8f8] px-6 py-3 text-base text-body-color outline-none transition-all duration-300 focus:border-[#16C3A6] dark:border-transparent dark:bg-[#2C303B] dark:focus:border-[#16C3A6] dark:focus:shadow-none"
                     />
+                    {emailError && (
+                      <p className="mt-2 text-sm text-red-600">{emailError}</p>
+                    )}
                   </div>
                   <div className="mb-8">
                     <label
@@ -179,7 +215,9 @@ const SigninPage = () => {
                     </div>
                   </div>
                   <div className="mb-6">
-                    <button className="shadow-submit dark:shadow-submit-dark flex w-full items-center justify-center rounded-sm bg-[#16C3A6] px-9 py-4 text-base font-medium text-white duration-300 hover:bg-[#16C3A6]/90">
+                    <button
+                     type="submit"
+                     className="shadow-submit dark:shadow-submit-dark flex w-full items-center justify-center rounded-sm bg-[#16C3A6] px-9 py-4 text-base font-medium text-white duration-300 hover:bg-[#16C3A6]/90">
                       Sign in
                     </button>
                   </div>
@@ -194,63 +232,7 @@ const SigninPage = () => {
             </div>
           </div>
         </div>
-        <div className="absolute left-0 top-0 z-[-1]">
-          <svg
-            width="1440"
-            height="969"
-            viewBox="0 0 1440 969"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <mask
-              id="mask0_95:1005"
-              style={{ maskType: "alpha" }}
-              maskUnits="userSpaceOnUse"
-              x="0"
-              y="0"
-              width="1440"
-              height="969"
-            >
-              <rect width="1440" height="969" fill="#16C3A6" />
-            </mask>
-            <g mask="url(#mask0_95:1005)">
-              <path
-                opacity="0.1"
-                d="M1086.96 297.978L632.959 554.978L935.625 535.926L1086.96 297.978Z"
-                fill="url(#paint0_linear_95:1005)"
-              />
-              <path
-                opacity="0.1"
-                d="M1324.5 755.5L1450 687V886.5L1324.5 967.5L-10 288L1324.5 755.5Z"
-                fill="url(#paint1_linear_95:1005)"
-              />
-            </g>
-            <defs>
-              <linearGradient
-                id="paint0_linear_95:1005"
-                x1="1178.4"
-                y1="151.853"
-                x2="780.959"
-                y2="453.581"
-                gradientUnits="userSpaceOnUse"
-              >
-                <stop stopColor="#16C3A6" />
-                <stop offset="1" stopColor="#16C3A6" stopOpacity="0" />
-              </linearGradient>
-              <linearGradient
-                id="paint1_linear_95:1005"
-                x1="160.5"
-                y1="220"
-                x2="1099.45"
-                y2="1192.04"
-                gradientUnits="userSpaceOnUse"
-              >
-                <stop stopColor="#16C3A6" />
-                <stop offset="1" stopColor="#16C3A6" stopOpacity="0" />
-              </linearGradient>
-            </defs>
-          </svg>
-        </div>
+       
       </section>
     </>
   );
