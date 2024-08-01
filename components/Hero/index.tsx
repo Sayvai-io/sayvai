@@ -1,6 +1,7 @@
 "use client";
 import Link from "next/link";
 import Image from "next/image";
+import Button from '@mui/material/Button';
 import { motion } from "framer-motion";
 
 const Hero = () => {
@@ -28,19 +29,23 @@ const Hero = () => {
                 </p>
 
                 <div className="flex flex-col items-start justify-start space-y-4 sm:flex-row sm:space-x-4 sm:space-y-0">
-                  <Link
-                  href="/signin"
-                  className="rounded-full bg-[#45988e] px-8 py-4 text-base font-semibold text-white duration-300 ease-in-out transform hover:scale-105 active:scale-95"
-                  >
-                  Get started
-                  </Link>
-                  <Link
-                  href="/#"
-                  className="inline-block rounded-full bg-black px-8 py-4 text-base font-semibold text-white duration-300 ease-in-out transform hover:scale-105 active:scale-95 dark:bg-white/10 dark:text-white dark:hover:bg-white/5"
-                  >
-                 View Services
-                 </Link>
-                </div>
+                <Button
+                href="/signin"
+                variant="contained"
+                disableElevation
+                className="rounded-full bg-[#16C3A6] hover:bg-[#16C3A6] px-8 py-4 text-base font-semibold text-white duration-300 ease-in-out transform hover:scale-105 active:scale-95"
+                >
+                 Get started
+               </Button>
+              <Button
+                href="/#"
+                variant="contained"
+                disableElevation
+                className="rounded-full bg-black hover:bg-black px-8 py-4 text-base font-semibold text-white duration-300 ease-in-out transform hover:scale-105 active:scale-95 dark:bg-black"
+                >
+              View Services
+              </Button>
+           </div>
 
               </div>
             </motion.div>
