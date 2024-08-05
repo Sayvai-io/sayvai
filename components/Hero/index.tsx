@@ -1,5 +1,4 @@
 "use client";
-import Link from "next/link";
 import Image from "next/image";
 import Button from '@mui/material/Button';
 import { motion } from "framer-motion";
@@ -54,7 +53,7 @@ const Hero = () => {
           {/* Right Section */}
           <div className="flex-1 flex items-center justify-center  ">
           <Image
-            src="/images/home/home5.jpg"
+            src="/images/home/home5.png"
             alt=""
             width={380}  
             height={380}  
