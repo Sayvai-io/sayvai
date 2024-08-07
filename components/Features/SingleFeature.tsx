@@ -16,7 +16,7 @@ const SingleFeature = ({ feature }: { feature: Feature }) => {
         </p>
       </div>
       <div className="absolute inset-0 rounded-none overflow-hidden">
-    <div className="absolute inset-0 bg-[#16C3A6] transition-all duration-300 ease-in-out transform scale-0 origin-bottom-left group-hover:scale-100 group-hover:opacity-100 opacity-0 shadow-[0_10px_30px_rgba(0,0,0,0.15)]"
+    <div className="absolute inset-0 bg-[#16C3A6] transition-all duration-1000 ease-in-out transform scale-0 origin-bottom-left group-hover:scale-100 group-hover:opacity-100 opacity-0 shadow-[0_10px_30px_rgba(0,0,0,0.15)]"
           style={{
             borderRadius: '50%',  
             transformOrigin: 'bottom left',
