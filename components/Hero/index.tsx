@@ -1,54 +1,65 @@
-"use client"
-import Link from "next/link";
+"use client";
+import Image from "next/image";
+import Button from '@mui/material/Button';
 import { motion } from "framer-motion";
 
 const Hero = () => {
   return (
-    <>
-      <section
-        id="home"
-        className="dark:bg-gray-dark relative z-10 overflow-hidden bg-white pb-16 pt-[120px] md:pb-[120px] md:pt-[150px] xl:pb-[160px] xl:pt-[180px] 2xl:pb-[200px] 2xl:pt-[210px]"
-      >
-        <div className="container">
+    <section
+    id="home"
+    className="dark:bg-gray-dark relative z-10 overflow-hidden bg-white pt-36 pb-0 md:pt-40 md:pb-0 lg:pt-48 lg:pb-16 xl:pt-48 xl:pb-0  "
+    >
+
+      <div className="container mx-auto flex flex-col lg:flex-row items-center lg:items-start justify-between px-4 lg:px-8">
+        {/* Left Section */}
+        <div className="flex-1 flex flex-col items-center lg:items-start justify-center text-center lg:text-left mb-8 lg:mb-0">
           <motion.div
             initial={{ y: 50, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             transition={{ duration: 0.3, ease: "easeOut" }}
-            className="-mx-4 flex flex-wrap"
+            className="max-w-xl"
           >
-            <div className="w-full px-4">
-              <div
-                className="wow fadeInUp mx-auto max-w-[800px] text-center"
-                data-wow-delay=".2s"
+            <h1 className="mb-4 text-5xl font-bold leading-tight text-[#45988e] dark:text-white sm:text-5xl lg:text-5xl xl:text-5xl">
+              AI in Your Business!
+            </h1>
+            <p className="dark:text-body-color-dark mb-16 text-base leading-relaxed text-body-color sm:text-lg lg:text-xl xl:text-xl">
+              Sayvai creates <span style={{ color: '#16C3A6' }}>customized AI solutions</span> specialized to your business needs. Our approach ensures smooth integration and impactful results, enabling your business to succeed in a competitive landscape.
+            </p>
+            <div className="flex flex-col items-center md:items-center sm:items-start sm:flex-row sm:space-x-4 space-y-4 sm:space-y-0 mb-12 md:mb-0">
+              <Button
+                href="/signin"
+                variant="contained"
+                disableElevation
+                className="w-48 h-12 rounded-full bg-[#16C3A6] hover:bg-[#16C3A6] text-base font-semibold text-white duration-300 ease-in-out transform hover:scale-105 active:scale-95"
               >
-                <h1 className="mb-5 text-3xl font-bold leading-tight text-[#45988e] dark:text-white sm:text-4xl sm:leading-tight md:text-5xl md:leading-tight">
-                  Customized AI solutions for your Businesses!
-                </h1>
-                <p className="dark:text-body-color-dark mb-12 text-base !leading-relaxed text-body-color sm:text-lg md:text-xl">
-                  Sayvai creates customized AI solutions specialized to your business needs. Our approach
-                  ensures smooth integration and impactful results, enabling your
-                  business to succeed in a competitive landscape.
-                </p>
-                <div className="flex flex-col items-center justify-center space-y-4 sm:flex-row sm:space-x-4 sm:space-y-0">
-                  <Link
-                    href="/signin"
-                    className="rounded-full bg-[#45988e] px-8 py-4 text-base font-semibold text-white duration-300 ease-in-out hover:bg-[#45988e]/80"
-                  >
-                    Get started
-                  </Link>
-                  <Link
-                    href="/#"
-                    className="inline-block rounded-full bg-black px-8 py-4 text-base font-semibold text-white duration-300 ease-in-out hover:bg-black/90 dark:bg-white/10 dark:text-white dark:hover:bg-white/5"
-                  >
-                    View Services
-                  </Link>
-                </div>
-              </div>
+                Get started
+              </Button>
+              <Button
+                href="/#"
+                variant="contained"
+                disableElevation
+                className="w-48 h-12 rounded-full dark:bg-[#fefbfb] bg-[#201f1f] dark:hover:bg-[#16C3A6] hover:bg-[#16C3A6] text-base font-semibold text-white dark:text-black dark:hover:text-white duration-300 ease-in-out transform hover:scale-105 active:scale-95"            >
+                View Services
+              </Button>
             </div>
           </motion.div>
         </div>
-      </section>
-    </>
+
+        {/* Right Section */}
+        <div className="flex-1 flex items-center justify-center">
+          <Image
+          src="/images/home/home5.png"
+          alt="AI Solutions Image"
+          width={600}   
+          height={600} 
+          className="object-cover max-w-full h-auto" 
+          style={{ marginTop: '-6rem' }}  
+        />
+      </div>
+
+
+      </div>
+    </section>
   );
 };
 
