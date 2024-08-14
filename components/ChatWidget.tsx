@@ -131,7 +131,7 @@ const ChatWidget = () => {
             />
             <button
               onClick={handleSendMessage}
-              className="bg-blue-500 text-white p-2 sm:p-1 rounded-full"
+              className="bg-[#45988e] text-white p-2 sm:p-1 rounded-full"
             >
               <FiSend />
             </button>
