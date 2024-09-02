@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import Image from "next/image";
 import SectionTitle from "../Common/SectionTitle";
 import Slider from "react-slick";
@@ -52,42 +52,60 @@ const Testimoni: React.FC<TestimoniProps> = ({
   ],
 }) => {
   const [selectedIndex, setSelectedIndex] = useState<number>(0);
+  const contentSliderRef = useRef<Slider>(null);
 
-  const handleCarouselChange = (current: number) => {
-    setSelectedIndex(current);
+  const handleNameClick = (index: number) => {
+    setSelectedIndex(index);
+    contentSliderRef.current?.slickGoTo(index); // Sync content slider with name slider
   };
 
-  const settings = {
+  const nameSliderSettings = {
     dots: false,
     infinite: true,
-    speed: 500,
+    speed: 400,
     slidesToShow: 4,
     slidesToScroll: 1,
     prevArrow: <CustomPrevArrow />,
     nextArrow: <CustomNextArrow />,
     beforeChange: (oldIndex: number, newIndex: number) => {
-      handleCarouselChange(newIndex);
+      handleNameClick(newIndex);
     },
     responsive: [
       {
         breakpoint: 1024,
         settings: {
           slidesToShow: 3,
+          slidesToScroll: 1,
         },
       },
       {
         breakpoint: 768,
         settings: {
           slidesToShow: 2,
+          slidesToScroll: 1,
         },
       },
       {
         breakpoint: 480,
         settings: {
           slidesToShow: 1,
+          slidesToScroll: 1,
         },
       },
     ],
+  };
+
+  const contentSliderSettings = {
+    dots: false,
+    infinite: true,
+    speed: 400,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    // prevArrow: <CustomPrevArrow />,
+    // nextArrow: <CustomNextArrow />,
+    beforeChange: (oldIndex: number, newIndex: number) => {
+      setSelectedIndex(newIndex); // Sync name slider with content slider
+    },
   };
 
   return (
@@ -101,55 +119,59 @@ const Testimoni: React.FC<TestimoniProps> = ({
         />
       </div>
 
-      <div className="relative mx-auto">
-        <Slider {...settings}>
+      {/* Slider for industry names */}
+      <div className="mt-8 mb-4">
+        <Slider {...nameSliderSettings}>
           {listTestimoni.map((item, index) => (
             <div
-              className="cursor-pointer flex flex-col items-center dark:bg-gray-800 p-4 rounded-lg shadow-lg hover:scale-105 transform duration-300 border-transparent"
               key={index}
-              onClick={() => handleCarouselChange(index)}
+              className={`cursor-pointer text-lg font-semibold ${
+                selectedIndex === index ? "text-blue-500" : "text-gray-800"
+              } hover:text-blue-500 transition-colors duration-300 text-center`}
+              onClick={() => handleNameClick(index)}
             >
-              <div className="w-full flex items-center justify-center mb-4">
-                <Image
-                  src={item.image}
-                  height={100}
-                  width={100}
-                  alt={item.name}
-                  className="rounded-full"
-                />
-              </div>
-              <h4 className="text-lg text-black-600 dark:text-white capitalize">
-                {item.name}
-              </h4>
+              {item.name}
             </div>
           ))}
         </Slider>
       </div>
 
-      <div className="mt-10 flex flex-col md:flex-row items-center transition-all duration-500 transform">
-        <div className="w-full md:w-1/2 flex justify-center">
-          <Image
-            src={listTestimoni[selectedIndex]?.image}
-            height={400}
-            width={400}
-            alt={listTestimoni[selectedIndex]?.name}
-            className="rounded-lg transition-all duration-500 transform"
-          />
-        </div>
-        <div className="w-full md:w-1/2 mt-6 md:mt-0">
-          <h3 className="text-2xl font-semibold transition-all duration-500 transform">
-            {listTestimoni[selectedIndex]?.name}
-          </h3>
-          <p className="text-lg mt-4 transition-all duration-500 transform">
-            {listTestimoni[selectedIndex]?.description}
-          </p>
-          <a
-            href={listTestimoni[selectedIndex]?.link}
-            className="mt-4 inline-block px-6 py-3 bg-transparent border-2 border-gray-800 text-gray-800 rounded-md hover:bg-gray-800 hover:text-white transition-all duration-300"
-          >
-            Explore
-          </a>
-        </div>
+      {/* Slider for industry content */}
+      <div className="relative mx-auto">
+        <Slider {...contentSliderSettings} ref={contentSliderRef}>
+          {listTestimoni.map((item, index) => (
+            <div
+              key={index}
+              className="cursor-pointer flex flex-col items-center dark:bg-gray-800 p-4"
+            >
+              <div className="mt-10 flex flex-col md:flex-row items-center">
+                <div className="w-full md:w-1/2 flex justify-center">
+                  <Image
+                    src={item.image}
+                    height={400}
+                    width={400}
+                    alt={item.name}
+                    className="rounded-lg transition-all duration-500 transform"
+                  />
+                </div>
+                <div className="w-full md:w-1/2 mt-6 md:mt-0">
+                  <h3 className="text-2xl font-semibold transition-all duration-500 transform">
+                    {item.name}
+                  </h3>
+                  <p className="text-lg mt-4 transition-all duration-500 transform">
+                    {item.description}
+                  </p>
+                  <a
+                    href={item.link}
+                    className="mt-4 inline-block px-6 py-3 bg-transparent border-2 border-gray-800 text-gray-800 rounded-md hover:bg-gray-800 hover:text-white transition-all duration-300"
+                  >
+                    Explore
+                  </a>
+                </div>
+              </div>
+            </div>
+          ))}
+        </Slider>
       </div>
     </div>
   );

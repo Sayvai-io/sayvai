@@ -1,7 +1,7 @@
 
 
-import Financeaccount from "@/components/Blog/Finance&Accounts";
-import LegalCompliance from "@/components/Blog/Legal&Complaince";
+import Financeaccount from "@/components/Solutions/Finance&Accounts/Finance&Accounts";
+import LegalCompliance from "@/components/Solutions/Legal&Compliance/Legal&Compliance";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {

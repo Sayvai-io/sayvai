@@ -1,6 +1,6 @@
 
 
-import Financeaccount from "@/components/Blog/Finance&Accounts";
+import Financeaccount from "@/components/Solutions/Finance&Accounts/Finance&Accounts";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {

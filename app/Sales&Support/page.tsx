@@ -1,6 +1,6 @@
 
 
-import SalesSupport from "@/components/Blog/Sales&Support";
+import SalesSupport from "@/components/Solutions/Sales&Support/Sales&Support";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {

@@ -1,6 +1,6 @@
 
 
-import FashionIndustry from "@/components/Blog/Fashion_Industry";
+import FashionIndustry from "@/components/Solutions/Fashion_Industry/Fashion_Industry";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
