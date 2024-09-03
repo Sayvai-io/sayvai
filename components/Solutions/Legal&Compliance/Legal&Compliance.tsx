@@ -27,29 +27,46 @@ const LegalCompliance = () => {
             <div className="-mx-4 flex flex-wrap items-center">
               <div className="w-full px-8 lg:w-1/2">
                 <h3 className="text-2xl font-semibold mb-4">
-                  1. Trends Forecasting and Buying Application
+                  1.Contract Automation & Intelligence
                 </h3>
                 <ul className="list-disc list-inside mb-4">
                   <li>
-                    AI streamlines data extraction from incoming invoices,
-                    whether received via email or uploaded in various formats,
-                    including duplicate detection.
+                     Manage contract variation
                   </li>
                   <li>
-                    Eliminates manual paper-based invoice handling and data
-                    entry, efficiently managing hundreds of invoices as a
-                    cohesive document set.
+                    Proactive contract management
                   </li>
                   <li>
-                    Converts invoices with extensive line items into a
-                    structured data format.
+                    Mitigate risks and enhance compliance
                   </li>
                   <li>
-                    AI models for table recognition accurately identify and
-                    categorize rows and cells, organizing each line item into
-                    logical groups.
+                    Improve contract visibility
                   </li>
                 </ul>
+               <div> 
+                <h2 className="text-2xl font-bold mb-6 mt-4">
+                Powerful Contract Automation Platform: 
+
+            </h2>
+            <h5 className="mb-4 mt-4">Leverage AI-powered data extraction from over 50,000 contracts for classification, aggregation, and automated insights to ensure compliant contracts and efficient closures. 
+            </h5> 
+             
+            <ul className="list-disc list-inside mb-4">
+                  <li>
+                  Capture - For automated abstraction 
+
+                  </li>
+                  <li>
+                  Search - For high-precision contextual results 
+                  </li>
+                  <li>
+                  Analyze - To make informed decisions
+                  </li>
+                  <li>
+                  Automate - To maximize efficiency
+                  </li>
+                </ul></div>
+                
               </div>
 
               <div className="w-full px-8 lg:w-1/2">
@@ -102,16 +119,20 @@ const LegalCompliance = () => {
                   </h3>
                   <ul className="list-disc list-inside mb-4 text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed text-justify">
                     <li>
-                      Performs in-depth fashion data analysis and produces
-                      detailed trend reports.
+                    Enable proactive cost reduction and identify revenue opportunities.
                     </li>
                     <li>
-                      Detects potential fashion trends using predefined criteria
-                      and analytical rules.
+                    Accurately manage various complex contracts from multiple sources.
                     </li>
                     <li>
-                      Forecasts future fashion movements by processing both
-                      historical and real-time data on market trends.
+                    User-friendly, no-code interface for non-tech users with secure (2FA) role-based access.
+                    </li>
+                    <li>
+                    Eliminate workflow delays, significantly speeding up processes.
+                    </li>
+                    <li>
+                    Powerful contextual search enabling quick comparisons and bulk modifications .
+
                     </li>
                   </ul>
                 </div>
@@ -125,21 +146,53 @@ const LegalCompliance = () => {
             <div className="-mx-4 flex flex-wrap items-center">
               <div className="w-full px-8 lg:w-1/2">
                 <h3 className="text-2xl font-semibold mb-4">
-                  2. Design & Product Development Application
+                  2.eDiscovery Process Automation
                 </h3>
                 <ul className="list-disc list-inside mb-4">
                   <li>
-                   AI technology is increasingly integrated into the fashion design and development process.
+                  Efficient case extraction .
+
                   </li>
                   <li>
-                   It provides design recommendations, optimizes patterns to maximize fabric efficiency, and creates virtual prototypes of clothing items.
+                  Accelerated case analysis 
                   </li>
                   <li>
-                    This allows designers to explore various fabrics,
-                    styles, and colors, visualize the final product, and streamline the design process, potentially
-                    reducing the number of revisions needed.
+                  Empower legal professionals 
+                    
+                  </li>
+                  <li>
+                  Risk detection and improved resolutions 
+
                   </li>
                 </ul>
+                <div>
+                <h3 className="text-2xl font-semibold mb-4">
+                Powerful eDiscovery Automation Platform: 
+                </h3>
+                <h5 className="mb-4 mt-4">Utilize AI-powered data extraction to process and analyze thousands of case documents acrossvarious formats, integrating deep insights to manage risks and make informed decisions. </h5>
+                <ul className="list-disc list-inside mb-4">
+                  <li>
+                  Capture - For automated extraction 
+
+
+                  </li>
+                  <li>
+                  Search - For seamless search 
+                  </li>
+                  <li>
+                  Empower legal professionals 
+                    
+                  </li>
+                  <li>
+                  Analyze - To make informed decisions 
+
+                  </li>
+                  <li>
+                  Automate - To maximize processing efficiency
+
+                  </li>
+                </ul>
+                </div>
               </div>
 
               <div className="w-full px-8 lg:w-1/2">
@@ -192,34 +245,19 @@ const LegalCompliance = () => {
                   </h3>
                   <ul className="list-disc list-inside mb-4 text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed text-justify">
                   <li>
-                    Optimizes patterns to minimize fabric waste, contributing to more sustainable
-                    production practices.
+                  Augment legal professionals by reducing manual tasks and automating end-to-endprocesses, cutting costs, and simplifying case analysis.
                   </li>
                   <li>
-                    Enhances material use, which helps lower production costs.
+                  Efficiently handle complex cases from multiple sources with high accuracy.                  </li>
+                  <li>
+                  Quick, relevant search results based on semantic relevance rather than just keywordmatches.
                   </li>
                   <li>
-                    Develops virtual models of clothing items to preview designs and assess fits before
-                    physical production.
-                  </li>
+                  Scale Botminds AI for case analysis with no-code point & click activities.                  </li>
                   <li>
-                    Enables real-time adjustments and provides instant feedback on design modifications.
+                  Achieve up to 100% accuracy with prebuilt taxonomies, human-in-the-loop automation, and self-learning.
                   </li>
-                  <li>
-                    Generates a range of design ideas based on trends, designer preferences, and historical
-                    data.
-                  </li>
-                  <li>
-                    Offers tailored suggestions that match brand aesthetics and target audience
-                    preferences.
-                  </li>
-                  <li>
-                    Supports experimentation with various fabric, style, and color combinations to find
-                    the optimal match.
-                  </li>
-                  <li>
-                    Analyzes current trends to recommend popular fabric types, styles, and colors.
-                  </li>
+                   
                   </ul>
                 </div>
               </div>
@@ -231,24 +269,26 @@ const LegalCompliance = () => {
             <div className="-mx-4 flex flex-wrap items-center">
               <div className="w-full px-8 lg:w-1/2">
                 <h3 className="text-2xl font-semibold mb-4">
-                3. Merchandising and Analysis application
+                3.Contract Lifecycle Management
                 </h3>
                 <ul className="list-disc list-inside mb-4">
                   <li>
-                  Effective merchandising is crucial for optimizing sales and enhancing customer satisfaction.
-                  AI aids this process by improving inventory management and assortment planning.
+                  Automate contract creation 
                   </li>
                   <li>
-                  AI systems analyze comprehensive data, including sales figures, historical trends, and customer
-                  preferences, to determine the best product mix, quantities, and store placements.
-                  </li>
+                   Simplify negotiations </li>
                   <li>
-                  This datadriven
-                  strategy helps minimize excess inventory, reduce stockouts, and ultimately improve
-                  profitability for fashion businesses.
+                  Ensure compliance and governance  </li>
+                  <li>Streamline renewals and terminations 
                   </li>
-                  
-                </ul>
+                </ul> <div> 
+                <h2 className="text-2xl font-bold mb-6 mt-4">
+                Powerful Contract Lifecycle Platform :
+
+            </h2>
+            <h5 className="mb-4 mt-4">AI-powered data extraction from over 50,000 contracts for classification, aggregation, andautomated insights to ensure compliant contracts and efficient closures. </h5> 
+             
+             </div>
               </div>
 
               <div className="w-full px-8 lg:w-1/2">
@@ -301,31 +341,135 @@ const LegalCompliance = () => {
                   </h3>
                   <ul className="list-disc list-inside mb-4 text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed text-justify">
                   <li>
-                    Gathers and evaluates data from multiple sources to provide a complete view of
-                    inventory.
+                  Seamless integration with existing contract systems .
                   </li>
                   <li>
-                    Uses trend analysis and historical data to forecast demand, ensuring timely production
-                    of in-demand items and preventing overstocking.
+                  Real-time contract performance monitoring .
                   </li>
                   <li>
-                    Delivers real-time insights into stock levels and product performance to enable
-                    informed decision-making.
+                  Automated alerts for key contract milestones.
                   </li>
                   <li>
-                    Segments customers based on predefined criteria through data analysis.
+                  Comprehensive audit trail for enhanced governance.
                   </li>
-                  <li>
-                    Identifies potential opportunities for cross-selling and upselling based on customer
-                    segments.
-                  </li>
+                   
                   </ul>
                 </div>
               </div>
             </div>
           </div>
 
+          <div className="pb-8 md:pb-20 lg:pb-4 text-justify">
+            <div className="-mx-4 flex flex-wrap items-center">
+              <div className="w-full px-8 lg:w-1/2">
+                <h3 className="text-2xl font-semibold mb-4">
+                4.Patent Research Process Automation
+                </h3>
+                <ul className="list-disc list-inside mb-4">
+                  <li>
+                  Accelerate patent filing.
+                  </li>
+                  <li>
+                  Empower patent professionals                   </li>
+                  <li>
+                  Intelligent patent monitoring 
+                    
+                  </li>
+                  <li>
+                  Reduce patent costs 
+                  </li>
+                </ul>
+                <div>
+                <h2 className="text-2xl font-bold mb-4 mt-4">
+                Powerful Patent Research Automation Platform: 
+            </h2>
+                <h5 className="mb-4 mt-4">AI-powered extraction, search, and abstraction of patent information across repositories andtheweb for more efficient patent applications and lifecycle management. </h5>
+                <ul className="list-disc list-inside mb-4">
+                  <li>
+                  Capture - For intelligent data extraction
+                  </li>
+                  <li>
+                  Search - For contextual results 
+                  </li>
+                  <li>
+                  Analyze - To make informed decisions                     
+                  </li>
+                  <li>
+                  Automate - To maximize efficiency 
 
+                  </li>
+                   
+                </ul>
+                </div>
+              </div>
+
+              <div className="w-full px-8 lg:w-1/2">
+                <div
+                  className="wow fadeInUp relative mx-auto aspect-[25/24] max-w-[500px] lg:ml-0"
+                  data-wow-delay=".2s"
+                >
+                  <Image
+                    src="/images/about/about-image.png"
+                    alt="about-image"
+                    fill
+                    className="drop-shadow-three mx-auto max-w-full dark:hidden dark:drop-shadow-none lg:ml-0"
+                  />
+                  <Image
+                    src="/images/about/about-image.png"
+                    alt="about-image"
+                    fill
+                    className="drop-shadow-three mx-auto hidden max-w-full dark:block dark:drop-shadow-none lg:ml-0"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="border-b border-body-color/[.15] -mx-4 flex flex-wrap items-center">
+            <div className="w-full px-8 lg:w-1/2">
+              <div
+                className="wow fadeInUp relative mx-auto mb-6 aspect-[25/24] max-w-[500px] text-center lg:m-0"
+                data-wow-delay=".15s"
+              >
+                <Image
+                  src="/images/about/about-image-2.png"
+                  alt="about image"
+                  fill
+                  className="drop-shadow-three dark:hidden dark:drop-shadow-none"
+                />
+                <Image
+                  src="/images/about/about-image-2.png"
+                  alt="about image"
+                  fill
+                  className="drop-shadow-three hidden dark:block dark:drop-shadow-none"
+                />
+              </div>
+            </div>
+            <div className="w-full px-8 sm:px-6 md:px-8 lg:px-0 lg:w-1/2">
+              <div className="wow fadeInUp max-w-full lg:max-w-[570px]" data-wow-delay=".2s">
+                <div className="mb-4">
+                  <h3 className="mb-4 text-xl font-bold text-black dark:text-white sm:text-2xl lg:text-xl xl:text-2xl">
+                    Features
+                  </h3>
+                  <ul className="list-disc list-inside mb-4 text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed text-justify">
+                  <li>
+                  Automatically extract and analyze data from various patent-related sites in minutes. </li>
+                  <li>
+                  End-to-end automation from extraction to manual verification on a single platform.
+                  </li>
+                  <li>
+                  Point-and-click configuration, no-code AI with semantic understanding.</li>                 
+                   <li>
+                  Proactive prevention of manual errors in activities such as identifying, classifying, andextracting details from patents.</li>
+                   <li>
+                   Minimize manual intervention time in SME training and result prediction .
+                   </li>
+                   
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
     </>

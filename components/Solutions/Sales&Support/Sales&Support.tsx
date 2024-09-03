@@ -27,29 +27,33 @@ const SalesSupport = () => {
             <div className="-mx-4 flex flex-wrap items-center">
               <div className="w-full px-8 lg:w-1/2">
                 <h3 className="text-2xl font-semibold mb-4">
-                  1. Trends Forecasting and Buying Application
-                </h3>
+                1.Call Transcripts Analysis Automation:</h3>
+                <h5 className="list-disc list-inside mb-4">
+                <li> Call transcription analysis involves extracting useful information from live or recorded calls, such as meetings with potential customers, business calls, research interviews, earnings calls, andcustomer service calls.</li><li>  Analyzing these calls helps identify patterns and gain insights, whichisessential for business improvement. By automating this process, business analysts, product managers, marketers, sales managers, and executives can make their business more customer focused and increase ROI.</li> 
+
+                </h5>
                 <ul className="list-disc list-inside mb-4">
+                <li>
+                <strong>Customizable Business Applications:</strong> Create call summaries for sales calls, earnings calls, and customer service calls to find ways to improve customer service or make investment decisions.
+               </li>
+
                   <li>
-                    AI streamlines data extraction from incoming invoices,
-                    whether received via email or uploaded in various formats,
-                    including duplicate detection.
+                  <strong>Empower Teams:</strong> Use deep insights to boost sales conversions and identify business opportunities based on the analysis of call interactions. 
+
                   </li>
                   <li>
-                    Eliminates manual paper-based invoice handling and data
-                    entry, efficiently managing hundreds of invoices as a
-                    cohesive document set.
+                  <strong>Improve Turnaround Time:</strong> AI-powered extraction and annotation of call transcriptssave time and eliminate the need for manual call monitoring. 
+
                   </li>
                   <li>
-                    Converts invoices with extensive line items into a
-                    structured data format.
-                  </li>
-                  <li>
-                    AI models for table recognition accurately identify and
-                    categorize rows and cells, organizing each line item into
-                    logical groups.
+                  <strong>Monitor & Load Transcripts: </strong>Instantly load transcripts from any source using AI- powered crawlers.
+
                   </li>
                 </ul>
+                <h3 className="text-2xl font-semibold mb-4">
+                Powerful Call Transcript Analysis Platform: </h3>
+                <h5 className="list-disc list-inside mb-4">Creating a robust call transcript analysis platform involves integrating advanced features toextract deep insights and actionable intelligence from call data. 
+                </h5>
               </div>
 
               <div className="w-full px-8 lg:w-1/2">
@@ -102,16 +106,40 @@ const SalesSupport = () => {
                   </h3>
                   <ul className="list-disc list-inside mb-4 text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed text-justify">
                     <li>
-                      Performs in-depth fashion data analysis and produces
-                      detailed trend reports.
+                   <strong>  AI-Powered Data Extraction:</strong> Quickly and accurately captures detailed business information from calls, saving time and linking relevant data points. 
+
                     </li>
                     <li>
-                      Detects potential fashion trends using predefined criteria
-                      and analytical rules.
+                   <strong>  Vertical Search: </strong>Seamlessly search for specific keywords or phrases within transcriptsor find relevant transcripts from a large repository. Use timestamps to quickly filter through long conversations. 
+
                     </li>
                     <li>
-                      Forecasts future fashion movements by processing both
-                      historical and real-time data on market trends.
+                    <strong> Customized Dashboards:</strong> Analyze calls with dashboards that provide an overviewof potential opportunities or risks, and easily set up reports and widgets for meaningful insights. 
+
+                    </li>
+                    <li><strong> Generate Call Summaries and Snippets: </strong>Create quick and efficient summaries for easysharing with downstream systems using out-of-the-box connectors, APIs, and webhooks. 
+                    </li>
+                  </ul>
+                  <h3 className="text-2xl font-semibold mb-4">
+                  Benefits of Call Transcript Analysis Solution: 
+                  </h3>
+                  <ul className="list-disc list-inside mb-4 text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed text-justify">
+                    <li>
+                   <strong> Automated Call Summaries:</strong> Provides a post-meeting summary for call attendees, including searchable keywords, action items, and recordings, in an easily understandable format.
+                    </li>
+                    <li>
+                   <strong> Efficient Customer Service and Training: </strong> Agents can review complete calls withinminutes, improving training and service quality. 
+
+                    </li>
+                    <li>
+                    <strong> Automatic Transcript Loading: </strong> Intelligent crawlers automatically monitor and loadtranscripts from any source in real-time. 
+
+                    </li>
+                    <li><strong>  Human-Like AI Understanding: </strong> AI reads and understands transcripts like humans toextract relevant information.
+                    </li>
+                    <li><strong>Quick AI Training: </strong> Train AI in hours to reduce the time and costs associated withmanually defining extraction criteria. 
+                    </li>
+                    <li><strong>Deep Insights:</strong>Identify and minimize the number of at-risk prospects and customers inreal-time and through historical transcripts. 
                     </li>
                   </ul>
                 </div>
@@ -125,21 +153,14 @@ const SalesSupport = () => {
             <div className="-mx-4 flex flex-wrap items-center">
               <div className="w-full px-8 lg:w-1/2">
                 <h3 className="text-2xl font-semibold mb-4">
-                  2. Design & Product Development Application
+                2. Contact Center Automation:
                 </h3>
-                <ul className="list-disc list-inside mb-4">
-                  <li>
-                   AI technology is increasingly integrated into the fashion design and development process.
-                  </li>
-                  <li>
-                   It provides design recommendations, optimizes patterns to maximize fabric efficiency, and creates virtual prototypes of clothing items.
-                  </li>
-                  <li>
-                    This allows designers to explore various fabrics,
-                    styles, and colors, visualize the final product, and streamline the design process, potentially
-                    reducing the number of revisions needed.
-                  </li>
-                </ul>
+                <h3 className="  font-semibold mb-4">
+                Contact Center Automation for the Entire Customer Service Lifecycle: 
+
+                </h3>
+                <h5 className="list-disc list-inside mb-4"><li> Traditional chatbots in customer support are often rule-based, relying on keywords, and limit customer interaction to selecting predefined options.</li><li>  To handle variations in language andprovide quick, high-quality responses, AI is needed for a complete overhaul.</li><li>  Support agents should not be burdened with trivial or frequently asked questions.</li><li> Our AI supports Customer Service Agents in both the front office and back office by integrating chatbots with Bot AI toprovide high-quality answers from supporting documents.</li> <li> AI suggests possible answers fromexisting Knowledge Base articles, enhancing human agents' productivity through AI-basedsuggestions and reviews. </li>
+                </h5>
               </div>
 
               <div className="w-full px-8 lg:w-1/2">
@@ -192,34 +213,21 @@ const SalesSupport = () => {
                   </h3>
                   <ul className="list-disc list-inside mb-4 text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed text-justify">
                   <li>
-                    Optimizes patterns to minimize fabric waste, contributing to more sustainable
-                    production practices.
+                  <strong> Front-to-Back Complete Automation: </strong>Enhance the customer service experience byassisting agents at all touchpoints. 
+
                   </li>
                   <li>
-                    Enhances material use, which helps lower production costs.
+                  <strong> Easy Integrations:</strong> Easily integrate AI into your existing tools and systems.
                   </li>
                   <li>
-                    Develops virtual models of clothing items to preview designs and assess fits before
-                    physical production.
+                  <strong> Continuous Learning & Improvement:</strong> Each acceptance or rejection of AI suggestions helps improve future responses. 
                   </li>
                   <li>
-                    Enables real-time adjustments and provides instant feedback on design modifications.
+                  <strong>4X Agent Productivity:</strong> Free knowledge workers from repetitive tasks, allowing themtofocus on creative solutions.
+
                   </li>
-                  <li>
-                    Generates a range of design ideas based on trends, designer preferences, and historical
-                    data.
-                  </li>
-                  <li>
-                    Offers tailored suggestions that match brand aesthetics and target audience
-                    preferences.
-                  </li>
-                  <li>
-                    Supports experimentation with various fabric, style, and color combinations to find
-                    the optimal match.
-                  </li>
-                  <li>
-                    Analyzes current trends to recommend popular fabric types, styles, and colors.
-                  </li>
+                   
+                   
                   </ul>
                 </div>
               </div>
@@ -227,104 +235,7 @@ const SalesSupport = () => {
           </div>
           {/* -------------------------------------------------------------------------------------------------- */}
            
-          <div className="pb-8 md:pb-20 lg:pb-4 text-justify">
-            <div className="-mx-4 flex flex-wrap items-center">
-              <div className="w-full px-8 lg:w-1/2">
-                <h3 className="text-2xl font-semibold mb-4">
-                3. Merchandising and Analysis application
-                </h3>
-                <ul className="list-disc list-inside mb-4">
-                  <li>
-                  Effective merchandising is crucial for optimizing sales and enhancing customer satisfaction.
-                  AI aids this process by improving inventory management and assortment planning.
-                  </li>
-                  <li>
-                  AI systems analyze comprehensive data, including sales figures, historical trends, and customer
-                  preferences, to determine the best product mix, quantities, and store placements.
-                  </li>
-                  <li>
-                  This datadriven
-                  strategy helps minimize excess inventory, reduce stockouts, and ultimately improve
-                  profitability for fashion businesses.
-                  </li>
-                  
-                </ul>
-              </div>
-
-              <div className="w-full px-8 lg:w-1/2">
-                <div
-                  className="wow fadeInUp relative mx-auto aspect-[25/24] max-w-[500px] lg:ml-0"
-                  data-wow-delay=".2s"
-                >
-                  <Image
-                    src="/images/about/about-image.png"
-                    alt="about-image"
-                    fill
-                    className="drop-shadow-three mx-auto max-w-full dark:hidden dark:drop-shadow-none lg:ml-0"
-                  />
-                  <Image
-                    src="/images/about/about-image.png"
-                    alt="about-image"
-                    fill
-                    className="drop-shadow-three mx-auto hidden max-w-full dark:block dark:drop-shadow-none lg:ml-0"
-                  />
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div className="border-b border-body-color/[.15] -mx-4 flex flex-wrap items-center">
-            <div className="w-full px-8 lg:w-1/2">
-              <div
-                className="wow fadeInUp relative mx-auto mb-6 aspect-[25/24] max-w-[500px] text-center lg:m-0"
-                data-wow-delay=".15s"
-              >
-                <Image
-                  src="/images/about/about-image-2.png"
-                  alt="about image"
-                  fill
-                  className="drop-shadow-three dark:hidden dark:drop-shadow-none"
-                />
-                <Image
-                  src="/images/about/about-image-2.png"
-                  alt="about image"
-                  fill
-                  className="drop-shadow-three hidden dark:block dark:drop-shadow-none"
-                />
-              </div>
-            </div>
-            <div className="w-full px-8 sm:px-6 md:px-8 lg:px-0 lg:w-1/2">
-              <div className="wow fadeInUp max-w-full lg:max-w-[570px]" data-wow-delay=".2s">
-                <div className="mb-4">
-                  <h3 className="mb-4 text-xl font-bold text-black dark:text-white sm:text-2xl lg:text-xl xl:text-2xl">
-                    Features
-                  </h3>
-                  <ul className="list-disc list-inside mb-4 text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed text-justify">
-                  <li>
-                    Gathers and evaluates data from multiple sources to provide a complete view of
-                    inventory.
-                  </li>
-                  <li>
-                    Uses trend analysis and historical data to forecast demand, ensuring timely production
-                    of in-demand items and preventing overstocking.
-                  </li>
-                  <li>
-                    Delivers real-time insights into stock levels and product performance to enable
-                    informed decision-making.
-                  </li>
-                  <li>
-                    Segments customers based on predefined criteria through data analysis.
-                  </li>
-                  <li>
-                    Identifies potential opportunities for cross-selling and upselling based on customer
-                    segments.
-                  </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-
+           
 
         </div>
       </section>
