@@ -101,8 +101,6 @@ const Testimoni: React.FC<TestimoniProps> = ({
     speed: 400,
     slidesToShow: 1,
     slidesToScroll: 1,
-    // prevArrow: <CustomPrevArrow />,
-    // nextArrow: <CustomNextArrow />,
     beforeChange: (oldIndex: number, newIndex: number) => {
       setSelectedIndex(newIndex); // Sync name slider with content slider
     },
@@ -114,41 +112,38 @@ const Testimoni: React.FC<TestimoniProps> = ({
         <SectionTitle
           title="INDUSTRIES WE SERVE"
           subtitle=""
-          paragraph="There are many variations of passages of Lorem Ipsum available but the majority have suffered alteration in some form."
+          paragraph="Explore the diverse industries we serve and discover tailored solutions for your business."
           center
         />
       </div>
 
       {/* Slider for industry names */}
-      <div className="mt-8 mb-4  dark:bg-gray-800">
-                <Slider {...nameSliderSettings}>
-        {[
-          { name: "Finance and Accounts", icon: "images/industries icon/icon1.png" },
-          { name: "Fashion Industry", icon: "images/industries icon/icon5.png" },
-          { name: "Legal and Compliance", icon: "images/industries icon/icon3.png" },
-          { name: "Sales and Support", icon: "images/industries icon/icon4.png" },
-         ].map((item, index) => (
-        <div
-        key={index}
-        className={`cursor-pointer text-lg font-semibold text-center flex items-center justify-center transition-colors duration-300 ${
-          selectedIndex === index
-            ? "text-[#16C3A6] dark:text-[#16C3A6]"
-            : "text-gray-800 dark:text-gray-200"
-        } hover:text-[#16C3A6] dark:hover:text-[#16C3A6]`}
-        onClick={() => handleNameClick(index)}
-      >
-         
-        <div className="flex justify-center items-center">
-          <img src={item.icon} alt={item.name} className="mr-2 w-8 h-8" />
-        </div>
-        <div className="w-8 h-5" />
-         
-        {item.name}
+      <div className="mt-8 mb-4 dark:bg-gray-800">
+        <Slider {...nameSliderSettings}>
+          {[
+            { name: "Finance and Accounts", icon: "/images/industries icon/icon1.png" },
+            { name: "Fashion Industry", icon: "/images/industries icon/icon5.png" },
+            { name: "Legal and Compliance", icon: "/images/industries icon/icon3.png" },
+            { name: "Sales and Support", icon: "/images/industries icon/icon4.png" },
+          ].map((item, index) => (
+            <div
+              key={index}
+              className={`cursor-pointer text-lg font-semibold text-center flex items-center justify-center transition-colors duration-300 ${
+                selectedIndex === index
+                  ? "text-[#16C3A6] dark:text-[#16C3A6]"
+                  : "text-gray-800 dark:text-gray-200"
+              } hover:text-[#16C3A6] dark:hover:text-[#16C3A6]`}
+              onClick={() => handleNameClick(index)}
+            >
+              <div className="flex justify-center items-center">
+                <Image src={item.icon} alt={item.name} width={32} height={32} className="mr-2" />
+              </div>
+              <div className="w-8 h-5" />
+              {item.name}
+            </div>
+          ))}
+        </Slider>
       </div>
-       ))}
-      </Slider>
-    </div>
-
 
       {/* Slider for industry content */}
       <div className="relative mx-auto">
