@@ -132,9 +132,9 @@ const Testimoni: React.FC<TestimoniProps> = ({
         key={index}
         className={`cursor-pointer text-lg font-semibold text-center flex items-center justify-center transition-colors duration-300 ${
           selectedIndex === index
-            ? "text-blue-500 dark:text-blue-300"
+            ? "text-[#16C3A6] dark:text-[#16C3A6]"
             : "text-gray-800 dark:text-gray-200"
-        } hover:text-blue-500 dark:hover:text-blue-400`}
+        } hover:text-[#16C3A6] dark:hover:text-[#16C3A6]`}
         onClick={() => handleNameClick(index)}
       >
          
@@ -177,7 +177,7 @@ const Testimoni: React.FC<TestimoniProps> = ({
                   </p>
                   <a
                     href={item.link}
-                    className="mt-4 inline-block px-6 py-3 bg-transparent border-2 border-gray-800 text-gray-800 rounded-md hover:bg-gray-800 hover:text-white transition-all duration-300"
+                    className="mt-4 inline-block px-6 py-3 bg-transparent border-2 border-gray-800 text-gray-800 rounded-md hover:bg-[#16C3A6] hover:text-white transition-all duration-300"
                   >
                     Explore
                   </a>

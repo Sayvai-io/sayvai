@@ -14,8 +14,7 @@ const NewsLatterBox = () => {
         Tell us how we can help 
       </h3>
       <p className="mb-11 border-b border-body-color border-opacity-25 pb-11 text-base leading-relaxed text-body-color dark:border-white dark:border-opacity-25">
-        Lorem ipsum dolor sited Sed ullam corper consectur adipiscing Mae ornare
-        massa quis lectus.
+      We&apos;re here to help with any questions or support you need. Just let us know how we can assist.
       </p>
       <div>
         <input

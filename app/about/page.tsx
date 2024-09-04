@@ -18,7 +18,7 @@ const AboutPage = () => {
     <>
       <Breadcrumb
         pageName="About Page"
-        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. In varius eros eget sapien consectetur ultrices. Ut quis dapibus libero."
+        description="At Sayvai, we’re committed to helping businesses embrace the future with AI that enhances human connections. We make AI accessible and valuable, enabling businesses to thrive through compassion and innovation."
       />
       <AboutSectionOne />
       <AboutSectionTwo />

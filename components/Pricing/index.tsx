@@ -13,7 +13,7 @@ const Pricing = () => {
         <SectionTitle
           title="Simple and Affordable Pricing"
           subtitle="Choose a plan that suits your needs"
-          paragraph="There are many variations of passages of Lorem Ipsum available but the majority have suffered alteration in some form."
+          paragraph="There are numerous versions of placeholder text available, but most have been modified in some way."
           center
           width="665px"
         />
@@ -66,7 +66,7 @@ const Pricing = () => {
             packageName="Lite"
             price={isMonthly ? "9" : "108"}
             duration={isMonthly ? "mo" : "yr"}
-            subtitle="Lorem ipsum dolor sit amet adiscing elit Mauris egestas enim."
+            subtitle="Our Lite plan provides essential AI tools to jumpstart your business."
           >
             <OfferList text="Team members: 1" status="active" />
             <OfferList text="Users: Unlimited" status="active" />
@@ -79,7 +79,7 @@ const Pricing = () => {
             packageName="Basic"
             price={isMonthly ? "15" : "789"}
             duration={isMonthly ? "mo" : "yr"}
-            subtitle="Lorem ipsum dolor sit amet adiscing elit Mauris egestas enim."
+            subtitle="Our Basic plan provides essential AI tools to jumpstart your business."
           >
             <OfferList text="Team members: 1" status="active" />
             <OfferList text="Users: Unlimited" status="active" />
@@ -92,7 +92,7 @@ const Pricing = () => {
             packageName="Plus"
             price={isMonthly ? "10" : "999"}
             duration={isMonthly ? "mo" : "yr"}
-            subtitle="Lorem ipsum dolor sit amet adiscing elit Mauris egestas enim."
+            subtitle="Our Plus plan provides essential AI tools to jumpstart your business."
           >
            <OfferList text="Team members: 1" status="active" />
             <OfferList text="Users: Unlimited" status="active" />

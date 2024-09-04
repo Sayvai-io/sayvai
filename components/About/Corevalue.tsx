@@ -24,17 +24,17 @@ const coreValues = [
   
   const Corevalue = () => {
     return (
-      <section className="py-16 md:py-20 lg:py-28">
+      <section className="py-4 md:py-4 lg:py-4">
         <div className="container">
           <div className="-mx-4 flex flex-wrap items-start">
             <div className="w-full px-4">
               <div className="wow fadeInUp max-w-[940px] mx-auto" data-wow-delay=".2s">
-                <div className="mb-9">
+                <div className="mb-4">
                   <h3 className="mb-4 text-xl font-bold text-black dark:text-white sm:text-2xl lg:text-xl xl:text-2xl">
                     CORE VALUES
                   </h3>
                   {coreValues.map((value, index) => (
-                    <p key={index} className="mt-8 text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed">
+                    <p key={index} className="mt-4 text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed">
                       <span className="font-bold text-black dark:text-white">{value.title}: </span>
                       {value.content}
                     </p>
