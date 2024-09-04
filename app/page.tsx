@@ -17,12 +17,42 @@ import Testimonials from "@/components/Testimonials";
 import Video from "@/components/Video";
 import { Metadata } from "next";
 
-
 export const metadata: Metadata = {
   title: "Sayvai",
   description: "AI solutions",
   // other metadata
 };
+
+const defaultTestimoni = [
+  {
+    name: "Finance and Accounts",
+    description:
+      "We offer tailored financial and accounting services to help businesses maintain their financial health and streamline their accounting operations.",
+    image: "/images/Testimoni/Finance and Accounts.jpg",
+    link: "/Finance&account",
+  },
+  {
+    name: "Fashion Industry",
+    description:
+      "Our solutions for the fashion industry enable brands to stay ahead of trends, manage production, and enhance their customer engagement.",
+    image: "/images/Testimoni/Fashion Industry.jpg",
+    link: "/Fashion_Industry",
+  },
+  {
+    name: "Legal and Compliance",
+    description:
+      "We provide expert legal and compliance services, helping businesses navigate regulatory challenges and mitigate risks.",
+    image: "/images/Testimoni/Legal and Compliance.jpg",
+    link: "/Leagal&Compliance",
+  },
+  {
+    name: "Sales and Support",
+    description:
+      "Our sales and support services enhance customer satisfaction and drive revenue growth by optimizing the sales process.",
+    image: "/images/Testimoni/Sales and Support.jpg",
+    link: "/Sales&Support",
+  },
+];
 
 export default function Home() {
   return (
@@ -36,16 +66,13 @@ export default function Home() {
       {/* <Brands /> */}
       <AboutSectionOne />
       <AboutSectionTwo />
-      <Testimoni />
+      <Testimoni listTestimoni={defaultTestimoni} />
       {/* <Testimonials /> */}
       <Pricing />
       {/* <Blog /> */}
       <Faq />
-      
       {/* <CategoryCarousel /> */}
       <Contact />
-      
-
     </>
   );
 }
