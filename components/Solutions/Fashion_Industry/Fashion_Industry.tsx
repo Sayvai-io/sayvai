@@ -55,13 +55,13 @@ const FashionIndustry = () => {
                   data-wow-delay=".2s"
                 >
                   <Image
-                    src="/images/about/about-image.png"
+                    src="/images/solutions/finace&accounts/Trends.png"
                     alt="about-image"
                     fill
                     className="drop-shadow-three mx-auto max-w-full dark:hidden dark:drop-shadow-none lg:ml-0"
                   />
                   <Image
-                    src="/images/about/about-image.png"
+                    src="/images/solutions/finace&accounts/Trends.png"
                     alt="about-image"
                     fill
                     className="drop-shadow-three mx-auto hidden max-w-full dark:block dark:drop-shadow-none lg:ml-0"
@@ -71,20 +71,20 @@ const FashionIndustry = () => {
             </div>
           </div>
 
-          <div className="border-b border-body-color/[.15] -mx-4 flex flex-wrap items-center">
+          <div className="-mx-4 flex flex-wrap items-center">
             <div className="w-full px-8 lg:w-1/2">
               <div
                 className="wow fadeInUp relative mx-auto mb-6 aspect-[25/24] max-w-[500px] text-center lg:m-0"
                 data-wow-delay=".15s"
               >
                 <Image
-                  src="/images/about/about-image-2.png"
+                  src="/images/solutions/finace&accounts/Trends-feature.jpg"
                   alt="about image"
                   fill
                   className="drop-shadow-three dark:hidden dark:drop-shadow-none"
                 />
                 <Image
-                  src="/images/about/about-image-2.png"
+                  src="/images/solutions/finace&accounts/Trends-feature.jpg"
                   alt="about image"
                   fill
                   className="drop-shadow-three hidden dark:block dark:drop-shadow-none"
@@ -145,13 +145,13 @@ const FashionIndustry = () => {
                   data-wow-delay=".2s"
                 >
                   <Image
-                    src="/images/about/about-image.png"
+                    src="/images/solutions/finace&accounts/Design-Feature.png"
                     alt="about-image"
                     fill
                     className="drop-shadow-three mx-auto max-w-full dark:hidden dark:drop-shadow-none lg:ml-0"
                   />
                   <Image
-                    src="/images/about/about-image.png"
+                    src="/images/solutions/finace&accounts/Design-Feature.png"
                     alt="about-image"
                     fill
                     className="drop-shadow-three mx-auto hidden max-w-full dark:block dark:drop-shadow-none lg:ml-0"
@@ -161,20 +161,20 @@ const FashionIndustry = () => {
             </div>
           </div>
 
-          <div className="border-b border-body-color/[.15] -mx-4 flex flex-wrap items-center">
+          <div className=" -mx-4 flex flex-wrap items-center">
             <div className="w-full px-8 lg:w-1/2">
               <div
                 className="wow fadeInUp relative mx-auto mb-6 aspect-[25/24] max-w-[500px] text-center lg:m-0"
                 data-wow-delay=".15s"
               >
                 <Image
-                  src="/images/about/about-image-2.png"
+                  src="/images/solutions/finace&accounts/Design.png"
                   alt="about image"
                   fill
                   className="drop-shadow-three dark:hidden dark:drop-shadow-none"
                 />
                 <Image
-                  src="/images/about/about-image-2.png"
+                  src="/images/solutions/finace&accounts/Design.png"
                   alt="about image"
                   fill
                   className="drop-shadow-three hidden dark:block dark:drop-shadow-none"
@@ -254,13 +254,13 @@ const FashionIndustry = () => {
                   data-wow-delay=".2s"
                 >
                   <Image
-                    src="/images/about/about-image.png"
+                    src="/images/solutions/finace&accounts/Merchandising.png"
                     alt="about-image"
                     fill
                     className="drop-shadow-three mx-auto max-w-full dark:hidden dark:drop-shadow-none lg:ml-0"
                   />
                   <Image
-                    src="/images/about/about-image.png"
+                    src="/images/solutions/finace&accounts/Merchandising.png"
                     alt="about-image"
                     fill
                     className="drop-shadow-three mx-auto hidden max-w-full dark:block dark:drop-shadow-none lg:ml-0"
@@ -270,20 +270,20 @@ const FashionIndustry = () => {
             </div>
           </div>
 
-          <div className="border-b border-body-color/[.15] -mx-4 flex flex-wrap items-center">
+          <div className="-mx-4 flex flex-wrap items-center">
             <div className="w-full px-8 lg:w-1/2">
               <div
                 className="wow fadeInUp relative mx-auto mb-6 aspect-[25/24] max-w-[500px] text-center lg:m-0"
                 data-wow-delay=".15s"
               >
                 <Image
-                  src="/images/about/about-image-2.png"
+                  src="/images/solutions/finace&accounts/Merchandising-Feature.png"
                   alt="about image"
                   fill
                   className="drop-shadow-three dark:hidden dark:drop-shadow-none"
                 />
                 <Image
-                  src="/images/about/about-image-2.png"
+                  src="/images/solutions/finace&accounts/Merchandising-Feature.png"
                   alt="about image"
                   fill
                   className="drop-shadow-three hidden dark:block dark:drop-shadow-none"

@@ -62,13 +62,13 @@ const SalesSupport = () => {
                   data-wow-delay=".2s"
                 >
                   <Image
-                    src="/images/about/about-image.png"
+                    src="/images/solutions/Sales&Support/call.png"
                     alt="about-image"
                     fill
                     className="drop-shadow-three mx-auto max-w-full dark:hidden dark:drop-shadow-none lg:ml-0"
                   />
                   <Image
-                    src="/images/about/about-image.png"
+                    src="/images/solutions/Sales&Support/call.png"
                     alt="about-image"
                     fill
                     className="drop-shadow-three mx-auto hidden max-w-full dark:block dark:drop-shadow-none lg:ml-0"
@@ -85,13 +85,13 @@ const SalesSupport = () => {
                 data-wow-delay=".15s"
               >
                 <Image
-                  src="/images/about/about-image-2.png"
+                  src="/images/solutions/Sales&Support/call-feature.png"
                   alt="about image"
                   fill
                   className="drop-shadow-three dark:hidden dark:drop-shadow-none"
                 />
                 <Image
-                  src="/images/about/about-image-2.png"
+                  src="/images/solutions/Sales&Support/call-feature.png"
                   alt="about image"
                   fill
                   className="drop-shadow-three hidden dark:block dark:drop-shadow-none"
@@ -120,7 +120,16 @@ const SalesSupport = () => {
                     <li><strong> Generate Call Summaries and Snippets: </strong>Create quick and efficient summaries for easysharing with downstream systems using out-of-the-box connectors, APIs, and webhooks. 
                     </li>
                   </ul>
-                  <h3 className="text-2xl font-semibold mb-4">
+                 
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="pb-8 md:pb-20 lg:pb-4 text-justify">
+            <div className="-mx-4 flex flex-wrap items-center">
+              <div className="w-full px-8 lg:w-1/2">
+              <h3 className="text-2xl font-semibold mb-4">
                   Benefits of Call Transcript Analysis Solution: 
                   </h3>
                   <ul className="list-disc list-inside mb-4 text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed text-justify">
@@ -141,7 +150,27 @@ const SalesSupport = () => {
                     </li>
                     <li><strong>Deep Insights:</strong>Identify and minimize the number of at-risk prospects and customers inreal-time and through historical transcripts. 
                     </li>
-                  </ul>
+                  </ul>  
+              
+              </div>
+
+              <div className="w-full px-8 lg:w-1/2">
+                <div
+                  className="wow fadeInUp relative mx-auto aspect-[25/24] max-w-[500px] lg:ml-0"
+                  data-wow-delay=".2s"
+                >
+                  <Image
+                    src="/images/solutions/Sales&Support/call2.png"
+                    alt="about-image"
+                    fill
+                    className="drop-shadow-three mx-auto max-w-full dark:hidden dark:drop-shadow-none lg:ml-0"
+                  />
+                  <Image
+                    src="/images/solutions/Sales&Support/call2.png"
+                    alt="about-image"
+                    fill
+                    className="drop-shadow-three mx-auto hidden max-w-full dark:block dark:drop-shadow-none lg:ml-0"
+                  />
                 </div>
               </div>
             </div>
@@ -159,7 +188,7 @@ const SalesSupport = () => {
                 Contact Center Automation for the Entire Customer Service Lifecycle: 
 
                 </h3>
-                <h5 className="list-disc list-inside mb-4"><li> Traditional chatbots in customer support are often rule-based, relying on keywords, and limit customer interaction to selecting predefined options.</li><li>  To handle variations in language andprovide quick, high-quality responses, AI is needed for a complete overhaul.</li><li>  Support agents should not be burdened with trivial or frequently asked questions.</li><li> Our AI supports Customer Service Agents in both the front office and back office by integrating chatbots with Bot AI toprovide high-quality answers from supporting documents.</li> <li> AI suggests possible answers fromexisting Knowledge Base articles, enhancing human agents' productivity through AI-basedsuggestions and reviews. </li>
+                <h5 className="list-disc list-inside mb-4"><li> Traditional chatbots in customer support are often rule-based, relying on keywords, and limit customer interaction to selecting predefined options.</li><li>  To handle variations in language andprovide quick, high-quality responses, AI is needed for a complete overhaul.</li><li>  Support agents should not be burdened with trivial or frequently asked questions.</li><li> Our AI supports Customer Service Agents in both the front office and back office by integrating chatbots with Bot AI toprovide high-quality answers from supporting documents.</li> <li> AI suggests possible answers fromexisting Knowledge Base articles, enhancing human agents productivity through AI-basedsuggestions and reviews. </li>
                 </h5>
               </div>
 
@@ -169,13 +198,13 @@ const SalesSupport = () => {
                   data-wow-delay=".2s"
                 >
                   <Image
-                    src="/images/about/about-image.png"
+                    src="/images/solutions/Sales&Support/Contact.png"
                     alt="about-image"
                     fill
                     className="drop-shadow-three mx-auto max-w-full dark:hidden dark:drop-shadow-none lg:ml-0"
                   />
                   <Image
-                    src="/images/about/about-image.png"
+                    src="/images/solutions/Sales&Support/Contact.png"
                     alt="about-image"
                     fill
                     className="drop-shadow-three mx-auto hidden max-w-full dark:block dark:drop-shadow-none lg:ml-0"
@@ -192,13 +221,13 @@ const SalesSupport = () => {
                 data-wow-delay=".15s"
               >
                 <Image
-                  src="/images/about/about-image-2.png"
+                  src="/images/solutions/Sales&Support/Contact-feature.png"
                   alt="about image"
                   fill
                   className="drop-shadow-three dark:hidden dark:drop-shadow-none"
                 />
                 <Image
-                  src="/images/about/about-image-2.png"
+                  src="/images/solutions/Sales&Support/Contact-feature.png"
                   alt="about image"
                   fill
                   className="drop-shadow-three hidden dark:block dark:drop-shadow-none"

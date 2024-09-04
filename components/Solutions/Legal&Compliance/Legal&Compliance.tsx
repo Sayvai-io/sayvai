@@ -75,13 +75,13 @@ const LegalCompliance = () => {
                   data-wow-delay=".2s"
                 >
                   <Image
-                    src="/images/about/about-image.png"
+                    src="/images/solutions/finace&accounts/contract.png"
                     alt="about-image"
                     fill
                     className="drop-shadow-three mx-auto max-w-full dark:hidden dark:drop-shadow-none lg:ml-0"
                   />
                   <Image
-                    src="/images/about/about-image.png"
+                    src="/images/solutions/finace&accounts/contract.png"
                     alt="about-image"
                     fill
                     className="drop-shadow-three mx-auto hidden max-w-full dark:block dark:drop-shadow-none lg:ml-0"
@@ -98,13 +98,13 @@ const LegalCompliance = () => {
                 data-wow-delay=".15s"
               >
                 <Image
-                  src="/images/about/about-image-2.png"
+                  src="/images/solutions/finace&accounts/Contract-feature.png"
                   alt="about image"
                   fill
                   className="drop-shadow-three dark:hidden dark:drop-shadow-none"
                 />
                 <Image
-                  src="/images/about/about-image-2.png"
+                  src="/images/solutions/finace&accounts/Contract-feature.png"
                   alt="about image"
                   fill
                   className="drop-shadow-three hidden dark:block dark:drop-shadow-none"
@@ -201,13 +201,13 @@ const LegalCompliance = () => {
                   data-wow-delay=".2s"
                 >
                   <Image
-                    src="/images/about/about-image.png"
+                    src="/images/solutions/finace&accounts/eDiscovery.png"
                     alt="about-image"
                     fill
                     className="drop-shadow-three mx-auto max-w-full dark:hidden dark:drop-shadow-none lg:ml-0"
                   />
                   <Image
-                    src="/images/about/about-image.png"
+                    src="/images/solutions/finace&accounts/eDiscovery.png"
                     alt="about-image"
                     fill
                     className="drop-shadow-three mx-auto hidden max-w-full dark:block dark:drop-shadow-none lg:ml-0"
@@ -224,13 +224,13 @@ const LegalCompliance = () => {
                 data-wow-delay=".15s"
               >
                 <Image
-                  src="/images/about/about-image-2.png"
+                  src="/images/solutions/finace&accounts/eDiscovery-feature.png"
                   alt="about image"
                   fill
                   className="drop-shadow-three dark:hidden dark:drop-shadow-none"
                 />
                 <Image
-                  src="/images/about/about-image-2.png"
+                  src="/images/solutions/finace&accounts/eDiscovery-feature.png"
                   alt="about image"
                   fill
                   className="drop-shadow-three hidden dark:block dark:drop-shadow-none"
@@ -297,13 +297,13 @@ const LegalCompliance = () => {
                   data-wow-delay=".2s"
                 >
                   <Image
-                    src="/images/about/about-image.png"
+                    src="/images/solutions/finace&accounts/Lifecycle.png"
                     alt="about-image"
                     fill
                     className="drop-shadow-three mx-auto max-w-full dark:hidden dark:drop-shadow-none lg:ml-0"
                   />
                   <Image
-                    src="/images/about/about-image.png"
+                    src="/images/solutions/finace&accounts/Lifecycle.png"
                     alt="about-image"
                     fill
                     className="drop-shadow-three mx-auto hidden max-w-full dark:block dark:drop-shadow-none lg:ml-0"
@@ -320,13 +320,13 @@ const LegalCompliance = () => {
                 data-wow-delay=".15s"
               >
                 <Image
-                  src="/images/about/about-image-2.png"
+                  src="/images/solutions/finace&accounts/Lifecycle-feature.png"
                   alt="about image"
                   fill
                   className="drop-shadow-three dark:hidden dark:drop-shadow-none"
                 />
                 <Image
-                  src="/images/about/about-image-2.png"
+                  src="/images/solutions/finace&accounts/Lifecycle-feature.png"
                   alt="about image"
                   fill
                   className="drop-shadow-three hidden dark:block dark:drop-shadow-none"
@@ -409,13 +409,13 @@ const LegalCompliance = () => {
                   data-wow-delay=".2s"
                 >
                   <Image
-                    src="/images/about/about-image.png"
+                    src="/images/solutions/finace&accounts/contract.png"
                     alt="about-image"
                     fill
                     className="drop-shadow-three mx-auto max-w-full dark:hidden dark:drop-shadow-none lg:ml-0"
                   />
                   <Image
-                    src="/images/about/about-image.png"
+                    src="/images/solutions/finace&accounts/contract.png"
                     alt="about-image"
                     fill
                     className="drop-shadow-three mx-auto hidden max-w-full dark:block dark:drop-shadow-none lg:ml-0"
@@ -432,13 +432,13 @@ const LegalCompliance = () => {
                 data-wow-delay=".15s"
               >
                 <Image
-                  src="/images/about/about-image-2.png"
+                  src="/images/solutions/finace&accounts/Contract-feature.png"
                   alt="about image"
                   fill
                   className="drop-shadow-three dark:hidden dark:drop-shadow-none"
                 />
                 <Image
-                  src="/images/about/about-image-2.png"
+                  src="/images/solutions/finace&accounts/Contract-feature.png"
                   alt="about image"
                   fill
                   className="drop-shadow-three hidden dark:block dark:drop-shadow-none"
